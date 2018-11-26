@@ -1,0 +1,177 @@
+@media screen and (max-width: 1199px){
+  .finder{
+    height: 550px;
+  }
+  .finder h1 p{
+    line-height: 62px;
+    font-size: 80px;
+  }
+  .finder__form__select{
+    width: 300px;
+  }
+  .finder__form__calendar{
+    width: 180px;
+  }
+  .finder__form__submit{
+    width: 220px;
+  }
+  .parking__card__img{
+    height: 225px;
+  }
+  .parking__card__sticker{
+    height: 225px;
+  }
+  .footer__call-back__info{
+    left: 10px;
+  }
+  .footer__call-back__info ul li a{
+    padding-left: 20px;
+  }
+  .footer__call-back__info:before{
+    right: 10px;
+  }
+  .finder__form__select div{
+    width: 300px;
+  }
+}
+@media screen and (max-width: 991px){
+  .finder h1{
+    margin-bottom: 36px;
+  }
+  .finder h1 p{
+    line-height: 50px;
+    font-size: 64px;
+  }
+  .finder__form{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .finder__form__submit{
+    margin-top: 20px;
+  }
+  .footer__call-back__info:before{
+    width: 0;
+  }
+  .footer__call-back__contacts:before{
+    width: 0;
+  }
+}
+@media screen and (max-width: 767px){
+  .header__nav-bar{
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    bottom: 6px;
+  }
+  .header__logo {
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .header{
+    height: 120px;
+  }
+  .finder{
+    height: 350px;
+    margin-bottom: 35px;
+  }
+  .finder h1 p{
+    line-height: 38px;
+    font-size: 50px;
+  }
+  .finder__form__select {
+    width: 100%;
+    order: 1;
+    margin: 10px 20px;
+  }
+  .finder__form__submit{
+    margin-top: 0;
+  }
+  .finder__form__calendar {
+    width: 150px;
+    margin: 0;
+  }
+  .footer__head{
+    padding: 40px 0;
+  }
+  .footer__call-back{
+    padding: 40px 0;
+  }
+  .footer__call-back__contacts{
+    margin-bottom: 20px;
+  }
+  footer__call-back__form{
+    margin-top: 20px;
+  }
+  .finder__form__select div {
+    width: calc(100% + 2px);
+  }
+  }
+@media screen and (max-width: 574px){
+  .header__logo img{
+    height: 42px;
+    width: 42px;
+  }
+  .header__logo p{
+    font-size: 22px;
+  }
+  .header__nav-bar__link:before{
+    width: 0;
+  }
+  .header__nav-bar__link{
+    margin-right: 4px;
+    margin-left: 21px;
+  }
+  .header__nav-bar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    bottom: 22px;
+  }
+  .finder h1{
+    margin-bottom: 10px;
+  }
+  .finder h1 p {
+    line-height: 24px;
+    font-size: 30px;
+  }
+  .finder{
+    flex-direction: row;
+  }
+  .finder__form__calendar{
+    width: 100%;
+    margin: 10px 20px;
+    height: 50px;
+  }
+  .finder__form__submit {
+    order: 2;
+    width: 100%;
+    margin: 10px 20px;
+  }
+  .finder__form__select{
+    height: 50px;
+  }
+  .finder__form__select i{
+    top: 14px;
+  }
+  .finder__form__select > p{
+    line-height: 50px;
+  }
+  .finder__form__select div{
+    top: 48px;
+  }
+  .finder__form__submit{
+    height: 50px;
+  }
+  .footer__head__point{
+    margin-bottom: 20px;
+  }
+  .finder__form__select > p{
+    overflow: hidden;
+  }
+  .footer__call-back__info{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

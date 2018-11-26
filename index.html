@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Parking</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="nav-bar" class="container-fluid">
+            <div class="row header">
+                <a href="#" class="header__logo col mr-auto">
+                    <img src="img/logo.svg">
+                    <p>Parking</p>
+                    <p>Check24</p>
+                </a>
+                <div class="header__nav-bar">
+                    <div class="header__nav-bar__drop">
+                        <input type="checkbox" id="collaps-drop">
+                        <label for="collaps-drop">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </label>
+                        <div class="header__nav-bar__drop__collapse">
+                            <a class="header__nav-bar__drop__collapse__link">Link 1</a>
+                            <a class="header__nav-bar__drop__collapse__link">Link 2</a>
+                            <a class="header__nav-bar__drop__collapse__link">Last Link</a>
+                        </div>
+                    </div>
+                    <a href="#" class="header__nav-bar__link">Login</a>
+                    <a href="#" class="header__nav-bar__link">Anmeldung</a>
+                    <a href="#" class="header__nav-bar__link-green">+ Parkplatz HINZUFÜGEN</a>
+                </div>
+            </div>
+        </div>
+        <div id="finder" class="container-fluid">
+            <div class="finder row">
+                <h1><p>Parkplatz</p><p>Finden</p></h1>
+                <form class="finder__form">
+                    <label for="select-input" class="finder__form__select">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <p>Flughafen auswählen</p>
+                        <input  id="select-input" type="checkbox">
+                            <div>
+                                <p>Flughafen auswählen</p>
+                                <p>Flughafen auswählen</p>
+                                <p>Flughafen auswählen</p>
+                            </div>
+                    </label>
+                    <label class="finder__form__calendar">
+                        <input disabled placeholder="Von" type="text">
+                    </label>
+                    <label class="finder__form__calendar">
+                        <input disabled placeholder="Bis" type="text">
+                    </label>
+                    <button class="finder__form__submit" type="submit">Jetzt Suchen</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="parking" class="container">
+            <div class="row">
+                <div class="col-12 parking__head">
+                    <h2>Beliebte PARKPLÄTZE</h2>
+                    <p>SCHAU DICH UM</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parking__card">
+                        <div class="parking__card__sticker">
+                            <div class="parking__card__sticker__red second"><p>4.9/5.0</p></div>
+                        </div>
+                        <div class="parking__card__img">
+                            <img alt="parking" src="img/card-img-1.png">
+                        </div>
+                        <div class="parking__card__text">
+                            <a href="#">MC PARKING 1</a>
+                            <p>Consectetur adipisicing elit, sedmo tempor incididunt minim.  v Consectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parking__card">
+                        <div class="parking__card__sticker">
+                            <div class="parking__card__sticker__red first"><p>toprating</p></div>
+                            <div class="parking__card__sticker__red second"><p>4.9/5.0</p></div>
+                        </div>
+                        <div class="parking__card__img">
+                            <img alt="parking" src="img/card-img-2.png">
+                        </div>
+                        <div class="parking__card__text">
+                            <a href="#">PARKPLATz24</a>
+                            <p>Consectetur adipisicunt mionsectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parking__card">
+                        <div class="parking__card__sticker">
+                            <div class="parking__card__sticker__red first"><p>toprating</p></div>
+                        </div>
+                        <div class="parking__card__img">
+                            <img alt="parking" src="img/card-img-3.png">
+                        </div>
+                        <div class="parking__card__text">
+                            <a href="#">MC PARKING 2</a>
+                            <p>Consectetur adipisicing elit, sedmo tempor incididunt minim.  v Consectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parking__card">
+                        <div class="parking__card__sticker">
+                            <div class="parking__card__sticker__red first"><p>toprating</p></div>
+                            <div class="parking__card__sticker__red second"><p>4.9/5.0</p></div>
+                        </div>
+                        <div class="parking__card__img">
+                            <img alt="parking" src="img/card-img-1.png">
+                        </div>
+                        <div class="parking__card__text">
+                            <a href="#">PARKING 24/7</a>
+                            <p>Consectetur adunt mlit, sedmo  v</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parking__card">
+                        <div class="parking__card__sticker">
+                            <div class="parking__card__sticker__red first"><p>toprating</p></div>
+                            <div class="parking__card__sticker__red second"><p>4.9/5.0</p></div>
+                        </div>
+                        <div class="parking__card__img">
+                            <img alt="parking" src="img/card-img-3.png">
+                        </div>
+                        <div class="parking__card__text">
+                            <a href="#">PARKE GERNE</a>
+                            <p>Consectetur adipisicing elit, sedmo tempor incididunt minim.  v Consectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parking__card">
+                        <div class="parking__card__sticker">
+                        </div>
+                        <div class="parking__card__img">
+                            <img alt="parking" src="img/card-img-2.png">
+                        </div>
+                        <div class="parking__card__text">
+                            <a href="#">PARKHAUS</a>
+                            <p>Consectetur adipisicing elit, sedmo tempor incididunt minim.  v Consectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parking__card">
+                        <div class="parking__card__sticker">
+                            <div class="parking__card__sticker__red second"><p>4.9/5.0</p></div>
+                        </div>
+                        <div class="parking__card__img">
+                            <img alt="parking" src="img/card-img-1.png">
+                        </div>
+                        <div class="parking__card__text">
+                            <a href="#">elite Park club</a>
+                            <p>Consectetur adipisicing elit, sedmo tempor incididunt minim.  v Consectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parking__card">
+                        <div class="parking__card__sticker">
+                            <div class="parking__card__sticker__red first"><p>toprating</p></div>
+                        </div>
+                        <div class="parking__card__img">
+                            <img alt="parking" src="img/card-img-2.png">
+                        </div>
+                        <div class="parking__card__text">
+                            <a href="#">MC PARKING</a>
+                            <p>Consectetur adipisicing elit, sedmo tempor incididunt minim.  v Consectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="container">
+            <div class="row about">
+                <h2 class="col-12">Günstig parken am Flughafen</h2>
+                <div class="col-12 col-sm-6">
+                    <p>Sie möchtes beim Urlaub sparen? Dann sparen Sie doch beim Parken am Flughafen!
+                        An immer mehr Flughäfen gibt es alternative Parkplätze. Auf diesen parken Sie Ihr Auto sicher, schnell und mit viel Service. Dabei können Sie bis zu 60% gegenüber dem Preis direkt am Flughafen sparen - abhängig von Flughafen, Saison und Parkplatztyp. Wir von Parkplatzvergleich.de haben nahezu alle hier gelisteten Parkplätze an deutschen Flughäfen persönlich besucht. Haben Sie Fragen? Besuchen Sie unseren Ratgeber zum Parken am Flughafen.
+                        Profitieren Sie von 61.897 Kundenbewertungen in unserem Portal!</p>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <p>Sie möchtes beim Urlaub sparen? Dann sparen Sie doch beim Parken am Flughafen!
+                        An immer mehr Flughäfen gibt es alternative Parkplätze. Auf diesen parken Sie Ihr Auto sicher, schnell und mit viel Service. Dabei können Sie bis zu 60% gegenüber dem Preis direkt am Flughafen sparen - abhängig von Flughafen, Saison und Parkplatztyp. Wir von Parkplatzvergleich.de haben nahezu alle hier gelisteten Parkplätze an deutschen Flughäfen persönlich besucht. Haben Sie Fragen? Besuchen Sie unseren Ratgeber zum Parken am Flughafen.
+                        Profitieren Sie von 61.897 Kundenbewertungen in unserem Portal!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row footer__head">
+                <div class="col-6 col-sm-3 footer__head__point">
+                    <div class="footer__head__point__ico">
+                        <img alt="ico" src="img/footer-ico-1.png">
+                    </div>
+                    <h3>SPAREN SIE</h3>
+                    <p>BEI UNS SPAREN SIE BIS ZU 60% ZUM NORMALPREIS</p>
+                </div>
+                <div class="col-6 col-sm-3 footer__head__point">
+                    <div class="footer__head__point__ico">
+                        <img alt="ico" src="img/footer-ico-2.png">
+                    </div>
+                    <h3>SICHERE BUCHUNGEn</h3>
+                    <p>BEI UNS SPAREN SIE BIS ZU 60% ZUM NORMALPREIS</p>
+                </div>
+                <div class="col-6 col-sm-3 footer__head__point">
+                    <div class="footer__head__point__ico">
+                        <img alt="ico" src="img/footer-ico-3.png">
+                    </div>
+                    <h3>SUPER LEISTUNG</h3>
+                    <p>BEI UNS SPAREN SIE BIS ZU 60% ZUM NORMALPREIS</p>
+                </div>
+                <div class="col-6 col-sm-3 footer__head__point">
+                    <div class="footer__head__point__ico">
+                        <img alt="ico" src="img/footer-ico-4.png">
+                    </div>
+                    <h3>SMARTPHONE OPTIMIERT</h3>
+                    <p>BEI UNS SPAREN SIE BIS ZU 60% ZUM NORMALPREIS</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer__call-back__bg">
+            <div class="container">
+                <div class="row footer__call-back">
+                    <div class="col-12 col-md-6 col-lg-3 footer__call-back__contacts">
+                        <div class="footer__call-back__contacts__head">
+                            <i class="fa fa-bullseye" aria-hidden="true"></i>
+                            <h2>PARKINGCHECK24</h2>
+                        </div>
+                        <p>Consectetur adipisicing elit sed doings eiuod tempor incididunt</p>
+                        <a href="#"><i class="fa fa-location-arrow" aria-hidden="true"></i>AM SALUZUFER 24</a>
+                        <a href="tel:+4925658752"><i class="fa fa-phone" aria-hidden="true"></i>+49 - 256 - 58752</a>
+                        <a href="mailto:info@parkingcheck24.de"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@parkingcheck24.de</a>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 footer__call-back__info">
+                        <h2>INFORMATIONEN</h2>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>PARKPLATZ TIPPS</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>EMPFEHLUNGEn</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>IMMER AKTUELLE PREISE</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>BESTEN IN BERLIN</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>PREISE IN KÖLN</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-2 footer__call-back__info">
+                        <h2>FOLGE uNs</h2>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>Linkedin</a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+                            <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i>Rss</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 footer__call-back__form">
+                        <h2>Newsletter</h2>
+                        <p>Consectetur adipisicing elit sed doings eiuod tempor incididunt</p>
+                        <form>
+                            <div class="footer__call-back__form__wrapp">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="footer__call-back__form__wrapp">
+                                <input type="email" placeholder="Email">
+                                <button type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row footer__copyright">
+                <p>© 2017 | All Rights Reserved by McParking & Star Designz</p>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
