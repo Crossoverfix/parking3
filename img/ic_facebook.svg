@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_homepage_mcparking" transform="translate(-1139.000000, -3657.000000)">
+            <g id="footer" transform="translate(0.000000, 3389.000000)">
+                <g id="Group-7">
+                    <g id="Group-14" transform="translate(1139.000000, 227.000000)">
+                        <g id="Stacked-Group" transform="translate(0.000000, 41.000000)">
+                            <g id="ic_facebook">
+                                <path d="M11.9999588,0 C18.6277448,0 24,5.37299661 24,12.0000412 C24,18.6278272 18.6277448,24 11.9999588,24 C5.37217277,24 0,18.6277448 0,12.0000412 C0,5.37299661 5.37225516,0 11.9999588,0 Z" id="Path" fill="#95AAC4"></path>
+                                <path d="M13.1243964,8.28451383 L14.6666667,8.28451383 L14.6666667,6 L12.8536857,6 L12.8536857,6.00823842 C10.6569446,6.08625626 10.2067187,7.32449076 10.1670364,8.62500772 L10.1625177,8.62500772 L10.1625177,9.76578172 L8.66666667,9.76578172 L8.66666667,12.003007 L10.1625177,12.003007 L10.1625177,18 L12.4168515,18 L12.4168515,12.003007 L14.2635173,12.003007 L14.6202474,9.76578172 L12.4175909,9.76578172 L12.4175909,9.07655552 C12.4175909,8.63703582 12.7092519,8.28451383 13.1243964,8.28451383 Z" id="Path" fill="#023574"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

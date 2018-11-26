@@ -2,3 +2,32 @@ button, button:active, button:hover, button:visited,button:focus{
    outline: none!important;
    cursor: pointer;
  }
+a,a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.yellow-btn{
+  height: 40px;
+  background-color: $c-yellow;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  @include raleway(600,normal);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  padding: 0 25px;
+  color: $c-blue;
+  &:focus{
+    border: none;
+    outline: none;
+  }
+  &:hover{
+    background-color: $c-yellow-d;
+  }
+}

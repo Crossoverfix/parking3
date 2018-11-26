@@ -1,0 +1,6 @@
+@mixin raleway($weight,$style){
+  font-family: "Raleway", sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+  font-variant-numeric: lining-nums;
+}

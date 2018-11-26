@@ -7,297 +7,490 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
     <title>Parking</title>
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div id="nav-bar" class="container-fluid">
-            <div class="row header">
-                <a href="#" class="header__logo col mr-auto">
-                    <img src="img/logo.svg">
-                    <p>Parking</p>
-                    <p>Check24</p>
-                </a>
-                <div class="header__nav-bar">
-                    <div class="header__nav-bar__drop">
-                        <input type="checkbox" id="collaps-drop">
-                        <label for="collaps-drop">
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                        </label>
-                        <div class="header__nav-bar__drop__collapse">
-                            <a class="header__nav-bar__drop__collapse__link">Link 1</a>
-                            <a class="header__nav-bar__drop__collapse__link">Link 2</a>
-                            <a class="header__nav-bar__drop__collapse__link">Last Link</a>
-                        </div>
-                    </div>
-                    <a href="#" class="header__nav-bar__link">Login</a>
-                    <a href="#" class="header__nav-bar__link">Anmeldung</a>
-                    <a href="#" class="header__nav-bar__link-green">+ Parkplatz HINZUFÜGEN</a>
-                </div>
-            </div>
-        </div>
-        <div id="finder" class="container-fluid">
-            <div class="finder row">
-                <h1><p>Parkplatz</p><p>Finden</p></h1>
-                <form class="finder__form">
-                    <label for="select-input" class="finder__form__select">
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        <p>Flughafen auswählen</p>
-                        <input  id="select-input" type="checkbox">
-                            <div>
-                                <p>Flughafen auswählen</p>
-                                <p>Flughafen auswählen</p>
-                                <p>Flughafen auswählen</p>
-                            </div>
-                    </label>
-                    <label class="finder__form__calendar">
-                        <input disabled placeholder="Von" type="text">
-                    </label>
-                    <label class="finder__form__calendar">
-                        <input disabled placeholder="Bis" type="text">
-                    </label>
-                    <button class="finder__form__submit" type="submit">Jetzt Suchen</button>
-                </form>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div id="parking" class="container">
-            <div class="row">
-                <div class="col-12 parking__head">
-                    <h2>Beliebte PARKPLÄTZE</h2>
-                    <p>SCHAU DICH UM</p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="parking__card">
-                        <div class="parking__card__sticker">
-                            <div class="parking__card__sticker__red second"><p>4.9/5.0</p></div>
-                        </div>
-                        <div class="parking__card__img">
-                            <img alt="parking" src="img/card-img-1.png">
-                        </div>
-                        <div class="parking__card__text">
-                            <a href="#">MC PARKING 1</a>
-                            <p>Consectetur adipisicing elit, sedmo tempor incididunt minim.  v Consectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="parking__card">
-                        <div class="parking__card__sticker">
-                            <div class="parking__card__sticker__red first"><p>toprating</p></div>
-                            <div class="parking__card__sticker__red second"><p>4.9/5.0</p></div>
-                        </div>
-                        <div class="parking__card__img">
-                            <img alt="parking" src="img/card-img-2.png">
-                        </div>
-                        <div class="parking__card__text">
-                            <a href="#">PARKPLATz24</a>
-                            <p>Consectetur adipisicunt mionsectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="parking__card">
-                        <div class="parking__card__sticker">
-                            <div class="parking__card__sticker__red first"><p>toprating</p></div>
-                        </div>
-                        <div class="parking__card__img">
-                            <img alt="parking" src="img/card-img-3.png">
-                        </div>
-                        <div class="parking__card__text">
-                            <a href="#">MC PARKING 2</a>
-                            <p>Consectetur adipisicing elit, sedmo tempor incididunt minim.  v Consectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="parking__card">
-                        <div class="parking__card__sticker">
-                            <div class="parking__card__sticker__red first"><p>toprating</p></div>
-                            <div class="parking__card__sticker__red second"><p>4.9/5.0</p></div>
-                        </div>
-                        <div class="parking__card__img">
-                            <img alt="parking" src="img/card-img-1.png">
-                        </div>
-                        <div class="parking__card__text">
-                            <a href="#">PARKING 24/7</a>
-                            <p>Consectetur adunt mlit, sedmo  v</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="parking__card">
-                        <div class="parking__card__sticker">
-                            <div class="parking__card__sticker__red first"><p>toprating</p></div>
-                            <div class="parking__card__sticker__red second"><p>4.9/5.0</p></div>
-                        </div>
-                        <div class="parking__card__img">
-                            <img alt="parking" src="img/card-img-3.png">
-                        </div>
-                        <div class="parking__card__text">
-                            <a href="#">PARKE GERNE</a>
-                            <p>Consectetur adipisicing elit, sedmo tempor incididunt minim.  v Consectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="parking__card">
-                        <div class="parking__card__sticker">
-                        </div>
-                        <div class="parking__card__img">
-                            <img alt="parking" src="img/card-img-2.png">
-                        </div>
-                        <div class="parking__card__text">
-                            <a href="#">PARKHAUS</a>
-                            <p>Consectetur adipisicing elit, sedmo tempor incididunt minim.  v Consectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="parking__card">
-                        <div class="parking__card__sticker">
-                            <div class="parking__card__sticker__red second"><p>4.9/5.0</p></div>
-                        </div>
-                        <div class="parking__card__img">
-                            <img alt="parking" src="img/card-img-1.png">
-                        </div>
-                        <div class="parking__card__text">
-                            <a href="#">elite Park club</a>
-                            <p>Consectetur adipisicing elit, sedmo tempor incididunt minim.  v Consectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="parking__card">
-                        <div class="parking__card__sticker">
-                            <div class="parking__card__sticker__red first"><p>toprating</p></div>
-                        </div>
-                        <div class="parking__card__img">
-                            <img alt="parking" src="img/card-img-2.png">
-                        </div>
-                        <div class="parking__card__text">
-                            <a href="#">MC PARKING</a>
-                            <p>Consectetur adipisicing elit, sedmo tempor incididunt minim.  v Consectetur adipisicing elit, sedmo tempor incididunt minim.  v</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="about" class="container">
-            <div class="row about">
-                <h2 class="col-12">Günstig parken am Flughafen</h2>
-                <div class="col-12 col-sm-6">
-                    <p>Sie möchtes beim Urlaub sparen? Dann sparen Sie doch beim Parken am Flughafen!
-                        An immer mehr Flughäfen gibt es alternative Parkplätze. Auf diesen parken Sie Ihr Auto sicher, schnell und mit viel Service. Dabei können Sie bis zu 60% gegenüber dem Preis direkt am Flughafen sparen - abhängig von Flughafen, Saison und Parkplatztyp. Wir von Parkplatzvergleich.de haben nahezu alle hier gelisteten Parkplätze an deutschen Flughäfen persönlich besucht. Haben Sie Fragen? Besuchen Sie unseren Ratgeber zum Parken am Flughafen.
-                        Profitieren Sie von 61.897 Kundenbewertungen in unserem Portal!</p>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <p>Sie möchtes beim Urlaub sparen? Dann sparen Sie doch beim Parken am Flughafen!
-                        An immer mehr Flughäfen gibt es alternative Parkplätze. Auf diesen parken Sie Ihr Auto sicher, schnell und mit viel Service. Dabei können Sie bis zu 60% gegenüber dem Preis direkt am Flughafen sparen - abhängig von Flughafen, Saison und Parkplatztyp. Wir von Parkplatzvergleich.de haben nahezu alle hier gelisteten Parkplätze an deutschen Flughäfen persönlich besucht. Haben Sie Fragen? Besuchen Sie unseren Ratgeber zum Parken am Flughafen.
-                        Profitieren Sie von 61.897 Kundenbewertungen in unserem Portal!</p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="row footer__head">
-                <div class="col-6 col-sm-3 footer__head__point">
-                    <div class="footer__head__point__ico">
-                        <img alt="ico" src="img/footer-ico-1.png">
-                    </div>
-                    <h3>SPAREN SIE</h3>
-                    <p>BEI UNS SPAREN SIE BIS ZU 60% ZUM NORMALPREIS</p>
-                </div>
-                <div class="col-6 col-sm-3 footer__head__point">
-                    <div class="footer__head__point__ico">
-                        <img alt="ico" src="img/footer-ico-2.png">
-                    </div>
-                    <h3>SICHERE BUCHUNGEn</h3>
-                    <p>BEI UNS SPAREN SIE BIS ZU 60% ZUM NORMALPREIS</p>
-                </div>
-                <div class="col-6 col-sm-3 footer__head__point">
-                    <div class="footer__head__point__ico">
-                        <img alt="ico" src="img/footer-ico-3.png">
-                    </div>
-                    <h3>SUPER LEISTUNG</h3>
-                    <p>BEI UNS SPAREN SIE BIS ZU 60% ZUM NORMALPREIS</p>
-                </div>
-                <div class="col-6 col-sm-3 footer__head__point">
-                    <div class="footer__head__point__ico">
-                        <img alt="ico" src="img/footer-ico-4.png">
-                    </div>
-                    <h3>SMARTPHONE OPTIMIERT</h3>
-                    <p>BEI UNS SPAREN SIE BIS ZU 60% ZUM NORMALPREIS</p>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid footer__call-back__bg">
+        <div id="header__nav-bar" class="container-fluid">
             <div class="container">
-                <div class="row footer__call-back">
-                    <div class="col-12 col-md-6 col-lg-3 footer__call-back__contacts">
-                        <div class="footer__call-back__contacts__head">
-                            <i class="fa fa-bullseye" aria-hidden="true"></i>
-                            <h2>PARKINGCHECK24</h2>
-                        </div>
-                        <p>Consectetur adipisicing elit sed doings eiuod tempor incididunt</p>
-                        <a href="#"><i class="fa fa-location-arrow" aria-hidden="true"></i>AM SALUZUFER 24</a>
-                        <a href="tel:+4925658752"><i class="fa fa-phone" aria-hidden="true"></i>+49 - 256 - 58752</a>
-                        <a href="mailto:info@parkingcheck24.de"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@parkingcheck24.de</a>
+                <div class="row navigation-bar">
+                    <div class="navigation-bar__logo col-2">
+                        <a href="index.html">
+                            <picture>
+                                <img src="img/McParking.svg" alt="logo">
+                            </picture>
+                        </a>
                     </div>
-                    <div class="col-sm-6 col-lg-3 footer__call-back__info">
-                        <h2>INFORMATIONEN</h2>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>PARKPLATZ TIPPS</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>EMPFEHLUNGEn</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>IMMER AKTUELLE PREISE</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>BESTEN IN BERLIN</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>PREISE IN KÖLN</a></li>
-                        </ul>
+                    <div class="navigation-bar__info col-4">
+                        <span>Serviceline 9:00-19:00</span>
+                        <a href="tel:+4903041400300">+49 (0)30 41 400 300</a>
                     </div>
-                    <div class="col-sm-6 col-lg-2 footer__call-back__info">
-                        <h2>FOLGE uNs</h2>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>Linkedin</a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-                            <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i>Rss</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 footer__call-back__form">
-                        <h2>Newsletter</h2>
-                        <p>Consectetur adipisicing elit sed doings eiuod tempor incididunt</p>
-                        <form>
-                            <div class="footer__call-back__form__wrapp">
-                                <input type="text" placeholder="Name">
+                    <div class="navigation-bar__nav col-6">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Corporate Clients</a>
+                                </li>
+                                <li>
+                                    <a href="#">Travel Agencies</a>
+                                </li>
+                                <li>
+                                    <a href="#">Login</a>
+                                </li>
+                            </ul>
+                            <div class="navigation-bar__nav__language">
+                                <div class="navigation-bar__nav__language__active">
+                                    <a href="#">
+                                        <picture>
+                                            <source srcset="img/uk_flag.png">
+                                            <img href="img/uk_flag.png" alt="flag">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="navigation-bar__nav__language__drop lang-collapse">
+                                    <a href="#">
+                                        <p>United Kingdom</p>
+                                        <picture>
+                                            <source srcset="img/uk_flag.png">
+                                            <img href="img/uk_flag.png" alt="flag">
+                                        </picture>
+                                    </a>
+                                    <a href="#">
+                                        <p>Deutsch</p>
+                                        <picture>
+                                            <source srcset="img/de_flag.png">
+                                            <img href="img/de_flag.png" alt="flag">
+                                        </picture>
+                                    </a>
+                                    <a href="#">
+                                        <p>Poland</p>
+                                        <picture>
+                                            <source srcset="img/pl_flag.png">
+                                            <img href="img/pl_flag.png" alt="flag">
+                                        </picture>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="footer__call-back__form__wrapp">
-                                <input type="email" placeholder="Email">
-                                <button type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header__calendar" class="container-fluid">
+            <div class="container">
+                <div class="row calendar">
+                    <p class="calendar__title">Parking at the airport - <br>quite simply with McParking</p>
+                    <div class="calendar__body">
+                        <form>
+                            <div class="calendar__body__point col-5">
+                                <a href="#" class="calendar__body__point__input">
+                                    <img src="img/airplanemode_active_24px.svg" alt="ico">
+                                    <input name="data-place" type="text" placeholder="Airport" readonly>
+                                </a>
+                            </div>
+                            <div class="calendar__body__point input-date col-5">
+                                <a href="#" class="calendar__body__point__input-date">
+                                    <img src="img/today_24px.svg" alt="ico">
+                                    <span>Form</span>
+                                    <input name="data-from" type="text" placeholder="15 Dec 2018" readonly>
+                                </a>
+                                <a href="#" class="calendar__body__point__input-date">
+                                    <img src="img/event_24px.svg" alt="ico">
+                                    <span>Until</span>
+                                    <input name="data-until" type="text" placeholder="15 Dec 2018" readonly>
+                                </a>
+                            </div>
+                            <div class="calendar__body__point button-block col-2">
+                                <button type="submit">
+                                    <p>Book Now</p>
+                                </button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+            <div class="calendar__footer">
+                <div class="container">
+                    <div class="row calendar__footer__body">
+                        <div class="calendar__footer__body__rate">
+                            <a href="#">
+                                <div class="calendar__footer__body__rate__wrapp">
+                                    <div class="calendar__footer__body__rate__wrapp__star">
+                                        <img src="img/icon_Star.svg" alt="star">
+                                    </div>
+                                    <div class="calendar__footer__body__rate__wrapp__star">
+                                        <img src="img/icon_Star.svg" alt="star">
+                                    </div>
+                                    <div class="calendar__footer__body__rate__wrapp__star">
+                                        <img src="img/icon_Star.svg" alt="star">
+                                    </div>
+                                    <div class="calendar__footer__body__rate__wrapp__star">
+                                        <img src="img/icon_Star.svg" alt="star">
+                                    </div>
+                                    <div class="calendar__footer__body__rate__wrapp__star">
+                                        <img src="img/icon_Star.svg" alt="star">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="calendar__footer__body__link">
+                            <a href="#">Seit 2004 mehrere 1.000.000 zufriedene Kunden</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <div class="row footer__copyright">
-                <p>© 2017 | All Rights Reserved by McParking & Star Designz</p>
+    </header>
+    <main>
+        <div id="how-works" class="container">
+            <div class="how-works">
+                <p class="how-works__title">Wie es funktioniert</p>
+                <p class="how-works__sub-title">Reservieren Sie Ihren Parkplatz an unseren Flugplatzstandorten einfach und bequem online. Zahlen Sie bei Ihrer Ankunft an unserer Kasse in bar, per EC- oder Kreditkarte.</p>
+                <div class="row how-works__body">
+                    <div class="how-works__body__card col-3">
+                        <div class="how-works__body__card__wrapp">
+                            <div class="how-works__body__card__wrapp__ico">
+                                <picture>
+                                    <img src="img/ic_100x100-tablet.svg" alt="ico">
+                                </picture>
+                            </div>
+                            <div class="how-works__body__card__wrapp__text">
+                                <p class="how-works__body__card__wrapp__text__title">Reservieren</p>
+                                <p>Reservieren Sie Ihren Parkplatz einfach und bequem online</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="how-works__body__card col-3">
+                        <div class="how-works__body__card__wrapp">
+                            <div class="how-works__body__card__wrapp__ico">
+                                <picture>
+                                    <img src="img/ic_100x100-parking.svg" alt="ico">
+                                </picture>
+                            </div>
+                            <div class="how-works__body__card__wrapp__text">
+                                <p class="how-works__body__card__wrapp__text__title">Parken</p>
+                                <p>Parken Sie Ihr Auto auf unserem Gelände in Flughafennähe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="how-works__body__card col-3">
+                        <div class="how-works__body__card__wrapp">
+                            <div class="how-works__body__card__wrapp__ico">
+                                <picture>
+                                    <img src="img/ic_100x100-shutle.svg" alt="ico">
+                                </picture>
+                            </div>
+                            <div class="how-works__body__card__wrapp__text">
+                                <p class="how-works__body__card__wrapp__text__title">Shuttle</p>
+                                <p>Unser Shuttleservice bringt Sie vom Parkplatz zum Terminal und zurück</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="how-works__body__card col-3">
+                        <div class="how-works__body__card__wrapp">
+                            <div class="how-works__body__card__wrapp__ico">
+                                <picture>
+                                    <img src="img/ic_100x100-plane.svg" alt="ico">
+                                </picture>
+                            </div>
+                            <div class="how-works__body__card__wrapp__text">
+                                <p class="how-works__body__card__wrapp__text__title">Fliegen</p>
+                                <p>Sie treten entspannt und stressfrei Ihre Reise an</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="parking-about" class="container">
+            <div class="row parking-about">
+                <div class="col-4">
+                    <div class="parking-about__images">
+                        <picture>
+                            <img src="img/img_family.jpg" alt="foto">
+                        </picture>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="parking-about__text">
+                        <h2>Parken am Flughafen Berlin Tegel, Schönefeld, Brandenburg und Leipzig</h2>
+                        <p>Parken Sie Ihren Wagen günstig auf überwachtem und umzäuntem Gelände in jeweils nur wenigen Fahrminuten Entfernung von den Flughäfen Berlin Tegel, Schönefeld oder Leipzig. Kostengünstiges Parken in Flughafennähe. Wir fahren Sie und Ihr Gepäck bequem von unserem Parkplatz direkt zum Flughafen. Ganz ohne Stress.</p>
+                        <p>Lassen Sie gleich Ihren individuellen Preis für den von Ihnen gewünschten Parkzeitraum berechnen und reservieren Sie Ihren Stellplatz schnell und bequem online. Wählen Sie einfach in den oberen Buttons einen der vier Flughäfen aus, tragen Sie Ihre Reisedaten ein und sofort landet Ihre Parkplatzreservierung direkt bei uns. So unkompliziert ist es bei McParking, wenn Sie am Flughafen Leipzig, Berlin-Brandenburg, Berlin-Schönefeld oder Berlin-Tegel parken möchten.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="first-look" class="container-fluid">
+            <div class="first-look__bg"></div>
+            <div class="container">
+                <p class="first-look__title">Ihre Vorteile im Überblick</p>
+                <div class="row first-look">
+                    <div class="col-3">
+                        <div class="first-look__card">
+                            <div class="first-look__card__img">
+                                <picture>
+                                    <img src="img/ic_100x100-free.svg" alt="ico">
+                                </picture>
+                            </div>
+                            <div class="first-look__card__text">
+                                <p class="first-look__card__text__title">Free shuttle service included</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="first-look__card">
+                            <div class="first-look__card__img">
+                                <picture>
+                                    <img src="img/ic_100x100-24h.svg" alt="ico">
+                                </picture>
+                            </div>
+                            <div class="first-look__card__text">
+                                <p class="first-look__card__text__title">Available 24 hours a day</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="first-look__card">
+                            <div class="first-look__card__img">
+                                <picture>
+                                    <img src="img/ic_100x100-cam.svg" alt="ico">
+                                </picture>
+                            </div>
+                            <div class="first-look__card__text">
+                                <p class="first-look__card__text__title">Secure and illuminated parking place</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="first-look__card">
+                            <div class="first-look__card__img">
+                                <picture>
+                                    <img src="img/ic_100x100-charge.svg" alt="ico">
+                                </picture>
+                            </div>
+                            <div class="first-look__card__text">
+                                <p class="first-look__card__text__title">No cancellation charges</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="reservation" class="container">
+            <div class="row reservation">
+                <div class="reservation__text col-7">
+                    <h2>Jetzt online reservieren</h2>
+                    <p>Wählen Sie oben im hellblauen Bereich den Flughafen aus, an dem Sie einen Parkplatz bei McParking buchen möchten. Im Anschluss geben Sie bitte ihr Reisedatum an und klicken auf Verfügbarkeit & Preise um Ihren Parkpreis zu erhalten. Danach benötigen wir nur noch ein paar Angaben von Ihnen und schon ist Ihr Parkplatz reserviert. Nutzen Sie unseren komfortablen Shuttle-Service direkt zum Flughafen Ihrer Wahl und genießen Sie vom ersten Tag an Ihre Ferien.</p>
+                    <p>Und wenn Sie von Ihrer Reise zurück sind, sammeln Sie einfach Ihr Gepäck ein und rufen Sie uns an. Binnen kürzester Zeit ist einer unserer freundlichen Mitarbeiter bei Ihnen und bringt Sie zu Ihrem Fahrzeug. Reservieren Sie bei McParking Ihren Parkplatz und profitieren Sie davon, in Flughafennähe sicher zu parken. Lassen Sie sich bequem von uns zum Flughafen Leipzig, Tegel, Schönefeld und Berlin Brandenburg chauffieren.</p>
+                </div>
+                <div class="reservation__block col-5">
+                    <div class="reservation__block__wrap">
+                        <p class="reservation__block__wrap__title">Lust auf mehr?</p>
+                        <p class="reservation__block__wrap__sub-title">McParking Plus</p>
+                        <p class="reservation__block__wrap__par">Nutzen Sie unsere McParking Plus Zusatzoptionen und treten Sie Ihre Reise entspannt an!</p>
+                        <button class="yellow-btn">Infos Plus Vorteile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="partners" class="container">
+            <div class="row partners">
+                <p class="partners__title">Unsere Vorteilspartner</p>
+                <div class="partners__body">
+                    <a class="partners__body__card" href="#">
+                        <div class="partners__body__card__wrap">
+                            <picture>
+                                <img src="img/img_partner_contipark.png" alt="partners">
+                            </picture>
+                        </div>
+                    </a>
+                    <a class="partners__body__card" href="#">
+                        <div class="partners__body__card__wrap">
+                            <picture>
+                                <img src="img/img_partner_pcard.png" alt="partners">
+                            </picture>
+                        </div>
+                    </a>
+                    <a class="partners__body__card" href="#">
+                        <div class="partners__body__card__wrap">
+                            <picture>
+                                <img src="img/img_partner_adac.png" alt="partners">
+                            </picture>
+                        </div>
+                    </a>
+                    <a class="partners__body__card" href="#">
+                        <div class="partners__body__card__wrap">
+                            <picture>
+                                <img src="img/img_partner_tiger.png" alt="partners">
+                            </picture>
+                        </div>
+                    </a>
+                    <a class="partners__body__card" href="#">
+                        <div class="partners__body__card__wrap">
+                            <picture>
+                                <img src="img/img_partner_reiseburo.png" alt="partners">
+                            </picture>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="subscribe" class="container-fluid">
+            <div class="container">
+                <div class="row footer__subscribe">
+                    <div class="footer__subscribe__block col-6">
+                        <p class="footer__subscribe__title">Subscribe to our news</p>
+                        <p class="footer__subscribe__sub-title">Be aware of latest updates, promotions and prices.</p>
+                    </div>
+                    <div class="footer__subscribe__block col-6">
+                        <form class="footer__subscribe__input">
+                            <input class="footer__subscribe__input__text" type="text" placeholder="Your email address">
+                            <input class="footer__subscribe__input__submit" type="submit" value="SUBSCRIBE">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="container-fluid">
+            <div class="container">
+                <div class="row footer__info">
+                    <div class="col-3">
+                        <div class="footer__info__about">
+                            <div class="footer__info__about__logo">
+                                <a href="index.html">
+                                    <picture>
+                                        <img src="img/McParking.svg" alt="logo">
+                                    </picture>
+                                </a>
+                            </div>
+                            <p>© 2004 - 2018 McParking® - Eingetragene Marke - alle Rechte vorbehalten</p>
+                            <p>Obwohl wir uns um die Aktualität, Vollständigkeit und Richtigkeit der Inhalte unserer Seiten bemühen, können wir hierfür keine Garantie übernehmen. Alle Preisangaben inkl. 19% gesetzlicher Mehrwertsteuer.</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="footer__info__property">
+                            <div class="footer__info__property__block">
+                                <p class="footer__info__property__block__title">Our parking facilities</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">Parken Flughafen Berlin Tegel</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Parken Flughafen Schönefeld</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Parken Flughafen Leipzig</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Parken weitere Flughäfen</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__info__property__block">
+                                <p class="footer__info__property__block__title">Unser Unternehmen</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">Standorte</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Über uns</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Partner</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Impressum / Kontakt</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tracking</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="footer__info__information">
+                            <p class="footer__info__information__title">Information</p>
+                            <ul>
+                                <li>
+                                    <a href="#">Buchen</a>
+                                </li>
+                                <li>
+                                    <a href="#">AGB's</a>
+                                </li>
+                                <li>
+                                    <a href="#">Datenschutz</a>
+                                </li>
+                                <li>
+                                    <a href="#">Firmenkunden</a>
+                                </li>
+                                <li>
+                                    <a href="#">Reisebüros</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Leistungen</a>
+                                </li>
+                                <li>
+                                    <a href="#">Newsletter Lottery Teilnahmebedingungen</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="footer__info__social">
+                            <p class="footer__info__social__title">Follow us</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/ic_facebook.svg" alt="social">
+                                        <span>Facebook</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/ic_twitter.svg" alt="social">
+                                        <span>Twitter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/ic_linkedin.svg" alt="social">
+                                        <span>Linked In</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/ic_google-plus.svg" alt="social">
+                                        <span>Google+</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="footer__info__social__label">
+                                <picture>
+                                    <img src="img/img_partner_buf.png" alt="logo">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
