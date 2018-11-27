@@ -402,13 +402,23 @@ header {
 
 /* line 207, ../sass/style.scss */
 #header__calendar {
-  background: url("../img/img_main.jpg") no-repeat center grey;
+  background: url("../img/img_main.jpg") no-repeat center #3892CE;
   background-size: cover;
   position: relative;
   margin-bottom: 40px;
 }
+/* line 212, ../sass/style.scss */
+#header__calendar.mod-option {
+  background: url("") #3892CE;
+  margin-bottom: -45px;
+}
+/* line 215, ../sass/style.scss */
+#header__calendar.mod-option .calendar {
+  height: auto;
+  padding: 12px 0;
+}
 
-/* line 213, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .calendar {
   height: 656px;
   display: flex;
@@ -417,7 +427,7 @@ header {
   position: relative;
   padding-bottom: 80px;
 }
-/* line 220, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 .calendar__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -428,7 +438,7 @@ header {
   line-height: 71px;
   margin-bottom: 30px;
 }
-/* line 227, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .calendar__body {
   width: 100%;
   height: 48px;
@@ -437,7 +447,7 @@ header {
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 234, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .calendar__body form {
   display: flex;
   flex-direction: row;
@@ -446,14 +456,14 @@ header {
   position: relative;
   padding: 0;
 }
-/* line 242, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .calendar__body__point {
   height: 100%;
   position: relative;
   display: flex;
   flex-direction: row;
 }
-/* line 247, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .calendar__body__point input::-moz-placeholder {
   color: #023574;
   font-weight: 600;
@@ -461,7 +471,7 @@ header {
   font-size: 16px;
   opacity: 0.8;
 }
-/* line 254, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 .calendar__body__point input::-webkit-input-placeholder {
   color: #023574;
   font-weight: 600;
@@ -469,7 +479,7 @@ header {
   font-size: 16px;
   opacity: 0.8;
 }
-/* line 261, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 .calendar__body__point input {
   cursor: pointer;
   border: none;
@@ -483,20 +493,20 @@ header {
   line-height: 26px;
   color: #023574;
 }
-/* line 271, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .calendar__body__point input:focus {
   border: none;
   outline: none;
 }
-/* line 276, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .calendar__body__point.input-date {
   padding: 10px 0;
 }
-/* line 279, ../sass/style.scss */
+/* line 287, ../sass/style.scss */
 .calendar__body__point.button-block {
   padding: 3px 3px 4px 3px;
 }
-/* line 282, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 .calendar__body__point__input {
   width: 100%;
   height: 100%;
@@ -505,18 +515,18 @@ header {
   position: relative;
   padding-left: 30px;
 }
-/* line 289, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .calendar__body__point__input img {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
-/* line 295, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .calendar__body__point__input input {
   width: 100%;
 }
-/* line 298, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 .calendar__body__point__input-date {
   width: 50%;
   height: 100%;
@@ -526,7 +536,7 @@ header {
   padding-left: 50px;
   padding-right: 32px;
 }
-/* line 306, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 .calendar__body__point__input-date:after {
   content: "";
   position: absolute;
@@ -538,7 +548,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 317, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 .calendar__body__point__input-date:before {
   content: "";
   position: absolute;
@@ -548,14 +558,14 @@ header {
   width: 2px;
   background-color: #D8D8D8;
 }
-/* line 326, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 .calendar__body__point__input-date img {
   position: absolute;
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
 }
-/* line 332, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .calendar__body__point__input-date span {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -568,12 +578,12 @@ header {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 341, ../sass/style.scss */
+/* line 349, ../sass/style.scss */
 .calendar__body__point__input-date input {
   width: auto;
   max-width: 60%;
 }
-/* line 347, ../sass/style.scss */
+/* line 355, ../sass/style.scss */
 .calendar__body__point button {
   width: 100%;
   height: 100%;
@@ -594,27 +604,27 @@ header {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 363, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 .calendar__body__point button p {
   margin-bottom: 0;
 }
-/* line 366, ../sass/style.scss */
+/* line 374, ../sass/style.scss */
 .calendar__body__point button:focus {
   border: none;
   outline: none;
 }
-/* line 370, ../sass/style.scss */
+/* line 378, ../sass/style.scss */
 .calendar__body__point button:hover {
   background-color: #e8b900;
 }
-/* line 376, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .calendar__info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 35px;
 }
-/* line 381, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 .calendar__info__wrap {
   flex-grow: 0;
   display: flex;
@@ -626,13 +636,13 @@ header {
   background-color: rgba(2, 53, 116, 0.5);
   align-items: center;
 }
-/* line 392, ../sass/style.scss */
+/* line 400, ../sass/style.scss */
 .calendar__info ul {
   margin-top: 5px;
   margin-bottom: 5px;
   padding-left: 20px;
 }
-/* line 396, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 .calendar__info ul li {
   padding-left: 15px;
   font-family: "Raleway", sans-serif;
@@ -644,7 +654,7 @@ header {
   line-height: 24px;
   margin-bottom: 3px;
 }
-/* line 405, ../sass/style.scss */
+/* line 413, ../sass/style.scss */
 .calendar__info p {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -659,7 +669,7 @@ header {
   font-variant-numeric: normal;
   margin-left: 60px;
 }
-/* line 415, ../sass/style.scss */
+/* line 423, ../sass/style.scss */
 .calendar__info p u {
   margin-left: 2px;
   font-weight: 600;
@@ -667,7 +677,7 @@ header {
   text-decoration: none;
   line-height: 71px;
 }
-/* line 424, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 .calendar__footer {
   position: absolute;
   bottom: -40px;
@@ -676,7 +686,7 @@ header {
   width: 100%;
   background-color: #F8F8F8;
 }
-/* line 431, ../sass/style.scss */
+/* line 439, ../sass/style.scss */
 .calendar__footer__body {
   height: 40px;
   display: flex;
@@ -684,36 +694,36 @@ header {
   justify-content: center;
   align-items: center;
 }
-/* line 437, ../sass/style.scss */
+/* line 445, ../sass/style.scss */
 .calendar__footer__body__rate {
   margin-right: 15px;
 }
-/* line 439, ../sass/style.scss */
+/* line 447, ../sass/style.scss */
 .calendar__footer__body__rate a {
   width: 100%;
   height: 100%;
   display: inline-block;
 }
-/* line 444, ../sass/style.scss */
+/* line 452, ../sass/style.scss */
 .calendar__footer__body__rate__wrapp {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
 }
-/* line 449, ../sass/style.scss */
+/* line 457, ../sass/style.scss */
 .calendar__footer__body__rate__wrapp__star {
   width: 23px;
   height: 23px;
   margin-right: 3px;
   position: relative;
 }
-/* line 454, ../sass/style.scss */
+/* line 462, ../sass/style.scss */
 .calendar__footer__body__rate__wrapp__star img {
   height: 100%;
   width: auto;
 }
-/* line 462, ../sass/style.scss */
+/* line 470, ../sass/style.scss */
 .calendar__footer__body__link a {
   display: inline-block;
   font-family: "Raleway", sans-serif;
@@ -727,11 +737,11 @@ header {
   vertical-align: bottom;
 }
 
-/* line 475, ../sass/style.scss */
+/* line 483, ../sass/style.scss */
 .how-works {
   margin-bottom: 80px;
 }
-/* line 477, ../sass/style.scss */
+/* line 485, ../sass/style.scss */
 .how-works__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -743,7 +753,7 @@ header {
   width: 100%;
   margin-bottom: 25px;
 }
-/* line 485, ../sass/style.scss */
+/* line 493, ../sass/style.scss */
 .how-works__sub-title {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -755,14 +765,14 @@ header {
   letter-spacing: 0.5px;
   margin-bottom: 50px;
 }
-/* line 495, ../sass/style.scss */
+/* line 503, ../sass/style.scss */
 .how-works__body__card__wrapp {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
-  min-height: 290px;
+  height: 100%;
   background-color: white;
 }
-/* line 500, ../sass/style.scss */
+/* line 508, ../sass/style.scss */
 .how-works__body__card__wrapp__ico {
   height: 140px;
   width: 100%;
@@ -770,7 +780,7 @@ header {
   padding: 32px 0;
   text-align: center;
 }
-/* line 506, ../sass/style.scss */
+/* line 514, ../sass/style.scss */
 .how-works__body__card__wrapp__ico:before {
   content: "";
   position: absolute;
@@ -781,17 +791,17 @@ header {
   transform: translateX(-50%);
   background-color: #FFCC00;
 }
-/* line 516, ../sass/style.scss */
+/* line 524, ../sass/style.scss */
 .how-works__body__card__wrapp__ico img {
   height: 100%;
   text-align: center;
 }
-/* line 521, ../sass/style.scss */
+/* line 529, ../sass/style.scss */
 .how-works__body__card__wrapp__text {
   width: 100%;
   padding: 20px 30px;
 }
-/* line 524, ../sass/style.scss */
+/* line 532, ../sass/style.scss */
 .how-works__body__card__wrapp__text p {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -803,7 +813,7 @@ header {
   text-align: center;
   margin-bottom: 0;
 }
-/* line 532, ../sass/style.scss */
+/* line 540, ../sass/style.scss */
 .how-works__body__card__wrapp__text .how-works__body__card__wrapp__text__title {
   color: #023574;
   font-size: 24px;
@@ -812,22 +822,22 @@ header {
   margin-bottom: 15px;
 }
 
-/* line 544, ../sass/style.scss */
+/* line 552, ../sass/style.scss */
 .parking-about {
   margin-bottom: 80px;
 }
-/* line 546, ../sass/style.scss */
+/* line 554, ../sass/style.scss */
 .parking-about__images {
   position: relative;
   width: 100%;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 550, ../sass/style.scss */
+/* line 558, ../sass/style.scss */
 .parking-about__images img {
   width: 100%;
   height: auto;
 }
-/* line 555, ../sass/style.scss */
+/* line 563, ../sass/style.scss */
 .parking-about__text {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -837,7 +847,7 @@ header {
   font-size: 16px;
   line-height: 18px;
 }
-/* line 560, ../sass/style.scss */
+/* line 568, ../sass/style.scss */
 .parking-about__text h2 {
   color: #023574;
   font-size: 48px;
@@ -845,20 +855,97 @@ header {
   font-weight: 600;
   margin-bottom: 35px;
 }
-/* line 567, ../sass/style.scss */
+/* line 575, ../sass/style.scss */
 .parking-about__text p {
   letter-spacing: 0.5px;
   margin-bottom: 25px;
 }
+/* line 579, ../sass/style.scss */
+.parking-about__text ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+/* line 583, ../sass/style.scss */
+.parking-about__text ul li {
+  font-weight: 500;
+  padding-left: 35px;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  position: relative;
+}
+/* line 591, ../sass/style.scss */
+.parking-about__text ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  background-color: #FFCC00;
+}
+/* line 602, ../sass/style.scss */
+.parking-about__text ol {
+  padding-left: 0;
+  list-style-type: none;
+  counter-reset: num;
+}
+/* line 606, ../sass/style.scss */
+.parking-about__text ol li {
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-variant-numeric: lining-nums;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.87);
+}
+/* line 615, ../sass/style.scss */
+.parking-about__text ol li:before {
+  content: counter(num) ".";
+  counter-increment: num;
+  position: absolute;
+  top: 1px;
+  left: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-variant-numeric: lining-nums;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.87);
+}
 
-/* line 573, ../sass/style.scss */
+/* line 631, ../sass/style.scss */
 #first-look {
   position: relative;
   padding-top: 45px;
   margin-bottom: 80px;
 }
 
-/* line 579, ../sass/style.scss */
+/* line 637, ../sass/style.scss */
+.first-look.mod-option {
+  padding-bottom: 55px;
+}
+/* line 640, ../sass/style.scss */
+.first-look.mod-option .first-look__card__img {
+  height: auto;
+  padding: 40px 35px 10px 35px;
+  text-align: left;
+}
+/* line 644, ../sass/style.scss */
+.first-look.mod-option .first-look__card__img:before {
+  transform: translateX(0);
+  left: 35px;
+}
+/* line 651, ../sass/style.scss */
 .first-look__bg {
   width: 100%;
   background-color: #FFCC00;
@@ -868,7 +955,13 @@ header {
   height: 300px;
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 16px 0 rgba(0, 0, 0, 0.1);
 }
-/* line 588, ../sass/style.scss */
+/* line 659, ../sass/style.scss */
+.first-look__bg.mod-option {
+  top: auto;
+  bottom: 0;
+  height: 65%;
+}
+/* line 665, ../sass/style.scss */
 .first-look__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -880,15 +973,39 @@ header {
   margin-bottom: 25px;
   position: relative;
 }
-/* line 596, ../sass/style.scss */
+/* line 673, ../sass/style.scss */
+.first-look__sub-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-variant-numeric: lining-nums;
+  font-size: 24px;
+  line-height: 29px;
+  color: #023574;
+  margin-bottom: 10px;
+  position: relative;
+}
+/* line 681, ../sass/style.scss */
+.first-look__par {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-variant-numeric: lining-nums;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 30px;
+  position: relative;
+}
+/* line 689, ../sass/style.scss */
 .first-look__card {
   width: 100%;
   position: relative;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
-  min-height: 220px;
+  height: 100%;
 }
-/* line 602, ../sass/style.scss */
+/* line 695, ../sass/style.scss */
 .first-look__card__img {
   width: 100%;
   padding: 30px 0 25px 0;
@@ -896,7 +1013,7 @@ header {
   height: 140px;
   position: relative;
 }
-/* line 608, ../sass/style.scss */
+/* line 701, ../sass/style.scss */
 .first-look__card__img:before {
   content: "";
   position: absolute;
@@ -907,11 +1024,21 @@ header {
   transform: translateX(-50%);
   background-color: #FFCC00;
 }
-/* line 618, ../sass/style.scss */
+/* line 711, ../sass/style.scss */
 .first-look__card__img img {
   height: 100%;
 }
-/* line 622, ../sass/style.scss */
+/* line 714, ../sass/style.scss */
+.first-look__card__img__text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-variant-numeric: lining-nums;
+  font-size: 24px;
+  color: #023574;
+  line-height: 29px;
+}
+/* line 721, ../sass/style.scss */
 .first-look__card__text {
   padding: 10px 35px 20px 35px;
   font-family: "Raleway", sans-serif;
@@ -922,20 +1049,27 @@ header {
   font-size: 16px;
   line-height: 16px;
 }
-/* line 628, ../sass/style.scss */
+/* line 727, ../sass/style.scss */
 .first-look__card__text__title {
   font-weight: 600;
   color: #023574;
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
+/* line 733, ../sass/style.scss */
+.first-look__card__text__par {
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.87);
+}
 
-/* line 637, ../sass/style.scss */
+/* line 742, ../sass/style.scss */
 .reservation {
   margin-bottom: 45px;
   align-items: stretch;
 }
-/* line 640, ../sass/style.scss */
+/* line 745, ../sass/style.scss */
 .reservation__text {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -945,21 +1079,21 @@ header {
   font-size: 16px;
   line-height: 28px;
 }
-/* line 645, ../sass/style.scss */
+/* line 750, ../sass/style.scss */
 .reservation__text h2 {
   color: #023574;
   font-size: 48px;
   line-height: 57px;
   margin-bottom: 25px;
 }
-/* line 651, ../sass/style.scss */
+/* line 756, ../sass/style.scss */
 .reservation__text p {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.87);
   margin-bottom: 20px;
   letter-spacing: 0.5px;
 }
-/* line 659, ../sass/style.scss */
+/* line 764, ../sass/style.scss */
 .reservation__block__wrap {
   height: 100%;
   background-color: #023574;
@@ -973,7 +1107,7 @@ header {
   line-height: 21px;
   color: white;
 }
-/* line 668, ../sass/style.scss */
+/* line 773, ../sass/style.scss */
 .reservation__block__wrap__title {
   font-weight: 600;
   font-size: 48px;
@@ -981,7 +1115,7 @@ header {
   color: #FFCC00;
   margin-bottom: 15px;
 }
-/* line 675, ../sass/style.scss */
+/* line 780, ../sass/style.scss */
 .reservation__block__wrap__sub-title {
   font-weight: 600;
   font-size: 48px;
@@ -991,7 +1125,7 @@ header {
   padding-bottom: 30px;
   position: relative;
 }
-/* line 683, ../sass/style.scss */
+/* line 788, ../sass/style.scss */
 .reservation__block__wrap__sub-title:before {
   content: "";
   position: absolute;
@@ -1002,7 +1136,7 @@ header {
   width: 64px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 694, ../sass/style.scss */
+/* line 799, ../sass/style.scss */
 .reservation__block__wrap__par {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.7);
@@ -1012,11 +1146,11 @@ header {
   margin-bottom: 35px;
 }
 
-/* line 705, ../sass/style.scss */
+/* line 810, ../sass/style.scss */
 .partners {
   margin-bottom: 80px;
 }
-/* line 707, ../sass/style.scss */
+/* line 812, ../sass/style.scss */
 .partners__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1028,48 +1162,48 @@ header {
   margin-bottom: 45px;
   width: 100%;
 }
-/* line 715, ../sass/style.scss */
+/* line 820, ../sass/style.scss */
 .partners__body {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 720, ../sass/style.scss */
+/* line 825, ../sass/style.scss */
 .partners__body__card {
   width: 20%;
   cursor: pointer;
   display: inline-block;
 }
-/* line 724, ../sass/style.scss */
+/* line 829, ../sass/style.scss */
 .partners__body__card__wrap {
   width: 100%;
   position: relative;
   padding: 0 10%;
 }
-/* line 729, ../sass/style.scss */
+/* line 834, ../sass/style.scss */
 .partners__body__card img {
   width: 100%;
   height: auto;
 }
 
-/* line 736, ../sass/style.scss */
+/* line 841, ../sass/style.scss */
 #subscribe {
   background-color: #3892CE;
   padding: 50px 0;
 }
 
-/* line 741, ../sass/style.scss */
+/* line 846, ../sass/style.scss */
 .footer__subscribe {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-/* line 745, ../sass/style.scss */
+/* line 850, ../sass/style.scss */
 .footer__subscribe__block {
   padding: 0;
 }
-/* line 748, ../sass/style.scss */
+/* line 853, ../sass/style.scss */
 .footer__subscribe__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1080,7 +1214,7 @@ header {
   color: white;
   margin-bottom: 0;
 }
-/* line 755, ../sass/style.scss */
+/* line 860, ../sass/style.scss */
 .footer__subscribe__sub-title {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -1091,7 +1225,7 @@ header {
   color: white;
   margin-bottom: 0;
 }
-/* line 762, ../sass/style.scss */
+/* line 867, ../sass/style.scss */
 .footer__subscribe__input {
   width: 90%;
   margin: 0 0 0 auto;
@@ -1105,7 +1239,7 @@ header {
   display: flex;
   flex-direction: row;
 }
-/* line 774, ../sass/style.scss */
+/* line 879, ../sass/style.scss */
 .footer__subscribe__input input.footer__subscribe__input__text::-moz-placeholder {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -1115,7 +1249,7 @@ header {
   line-height: 22px;
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 780, ../sass/style.scss */
+/* line 885, ../sass/style.scss */
 .footer__subscribe__input input.footer__subscribe__input__text::-webkit-input-placeholder {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -1125,7 +1259,7 @@ header {
   line-height: 22px;
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 786, ../sass/style.scss */
+/* line 891, ../sass/style.scss */
 .footer__subscribe__input__text {
   flex-grow: 1;
   font-family: "Raleway", sans-serif;
@@ -1139,12 +1273,12 @@ header {
   border: none;
   outline: none;
 }
-/* line 795, ../sass/style.scss */
+/* line 900, ../sass/style.scss */
 .footer__subscribe__input__text:focus {
   border: none;
   outline: none;
 }
-/* line 800, ../sass/style.scss */
+/* line 905, ../sass/style.scss */
 .footer__subscribe__input__submit {
   border-radius: 2px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
@@ -1164,38 +1298,38 @@ header {
   outline: none;
   cursor: pointer;
 }
-/* line 815, ../sass/style.scss */
+/* line 920, ../sass/style.scss */
 .footer__subscribe__input__submit:focus {
   border: none;
   outline: none;
 }
-/* line 819, ../sass/style.scss */
+/* line 924, ../sass/style.scss */
 .footer__subscribe__input__submit:hover {
   background-color: #e8b900;
 }
-/* line 825, ../sass/style.scss */
+/* line 930, ../sass/style.scss */
 .footer__info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 830, ../sass/style.scss */
+/* line 935, ../sass/style.scss */
 .footer__info__about__logo {
   position: relative;
   height: 28px;
   margin-bottom: 30px;
 }
-/* line 834, ../sass/style.scss */
+/* line 939, ../sass/style.scss */
 .footer__info__about__logo a {
   display: inline-block;
   position: relative;
   height: 100%;
 }
-/* line 838, ../sass/style.scss */
+/* line 943, ../sass/style.scss */
 .footer__info__about__logo a img {
   height: 100%;
 }
-/* line 843, ../sass/style.scss */
+/* line 948, ../sass/style.scss */
 .footer__info__about p {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -1207,11 +1341,11 @@ header {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 30px;
 }
-/* line 853, ../sass/style.scss */
+/* line 958, ../sass/style.scss */
 .footer__info__property__block {
   margin-bottom: 30px;
 }
-/* line 855, ../sass/style.scss */
+/* line 960, ../sass/style.scss */
 .footer__info__property__block__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1223,16 +1357,16 @@ header {
   letter-spacing: 0.15px;
   margin-bottom: 15px;
 }
-/* line 863, ../sass/style.scss */
+/* line 968, ../sass/style.scss */
 .footer__info__property__block ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 866, ../sass/style.scss */
+/* line 971, ../sass/style.scss */
 .footer__info__property__block ul li {
   margin-bottom: 5px;
 }
-/* line 868, ../sass/style.scss */
+/* line 973, ../sass/style.scss */
 .footer__info__property__block ul li a {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -1244,11 +1378,11 @@ header {
   letter-spacing: 0.1px;
   margin-bottom: 15px;
 }
-/* line 875, ../sass/style.scss */
+/* line 980, ../sass/style.scss */
 .footer__info__property__block ul li a:hover {
   color: rgba(255, 255, 255, 0.4);
 }
-/* line 884, ../sass/style.scss */
+/* line 989, ../sass/style.scss */
 .footer__info__information__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1260,16 +1394,16 @@ header {
   letter-spacing: 0.15px;
   margin-bottom: 15px;
 }
-/* line 892, ../sass/style.scss */
+/* line 997, ../sass/style.scss */
 .footer__info__information ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 895, ../sass/style.scss */
+/* line 1000, ../sass/style.scss */
 .footer__info__information ul li {
   margin-bottom: 5px;
 }
-/* line 897, ../sass/style.scss */
+/* line 1002, ../sass/style.scss */
 .footer__info__information ul li a {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -1281,11 +1415,11 @@ header {
   letter-spacing: 0.1px;
   margin-bottom: 15px;
 }
-/* line 904, ../sass/style.scss */
+/* line 1009, ../sass/style.scss */
 .footer__info__information ul li a:hover {
   color: rgba(255, 255, 255, 0.4);
 }
-/* line 912, ../sass/style.scss */
+/* line 1017, ../sass/style.scss */
 .footer__info__social__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1297,16 +1431,16 @@ header {
   letter-spacing: 0.15px;
   margin-bottom: 15px;
 }
-/* line 920, ../sass/style.scss */
+/* line 1025, ../sass/style.scss */
 .footer__info__social ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 923, ../sass/style.scss */
+/* line 1028, ../sass/style.scss */
 .footer__info__social ul li {
   margin-bottom: 5px;
 }
-/* line 925, ../sass/style.scss */
+/* line 1030, ../sass/style.scss */
 .footer__info__social ul li a {
   display: inline-block;
   height: 24px;
@@ -1321,33 +1455,33 @@ header {
   letter-spacing: 0.1px;
   margin-bottom: 15px;
 }
-/* line 935, ../sass/style.scss */
+/* line 1040, ../sass/style.scss */
 .footer__info__social ul li a img {
   margin-right: 5px;
 }
-/* line 938, ../sass/style.scss */
+/* line 1043, ../sass/style.scss */
 .footer__info__social ul li a:hover {
   color: rgba(255, 255, 255, 0.4);
 }
-/* line 944, ../sass/style.scss */
+/* line 1049, ../sass/style.scss */
 .footer__info__social__label {
   margin-top: 60px;
   width: 80%;
   position: relative;
 }
-/* line 948, ../sass/style.scss */
+/* line 1053, ../sass/style.scss */
 .footer__info__social__label img {
   width: 100%;
   height: auto;
 }
 
-/* line 956, ../sass/style.scss */
+/* line 1061, ../sass/style.scss */
 #footer {
   background-color: #023574;
   padding: 50px 0;
 }
 
-/* line 960, ../sass/style.scss */
+/* line 1065, ../sass/style.scss */
 .works-about {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -1357,7 +1491,7 @@ header {
   color: black;
   margin-bottom: 80px;
 }
-/* line 965, ../sass/style.scss */
+/* line 1070, ../sass/style.scss */
 .works-about p.works-about__title {
   font-weight: 600;
   color: #023574;
@@ -1365,7 +1499,7 @@ header {
   font-size: 48px;
   margin-bottom: 30px;
 }
-/* line 972, ../sass/style.scss */
+/* line 1077, ../sass/style.scss */
 .works-about p {
   color: rgba(0, 0, 0, 0.87);
   line-height: 19px;
@@ -1373,13 +1507,13 @@ header {
   margin-bottom: 20px;
   font-weight: 500;
 }
-/* line 979, ../sass/style.scss */
+/* line 1084, ../sass/style.scss */
 .works-about ul {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 30px;
 }
-/* line 983, ../sass/style.scss */
+/* line 1088, ../sass/style.scss */
 .works-about ul li {
   font-weight: 500;
   padding-left: 35px;
@@ -1389,7 +1523,7 @@ header {
   margin-bottom: 15px;
   position: relative;
 }
-/* line 991, ../sass/style.scss */
+/* line 1096, ../sass/style.scss */
 .works-about ul li:before {
   content: "";
   position: absolute;
@@ -1400,7 +1534,7 @@ header {
   background-color: #FFCC00;
 }
 
-/* line 1003, ../sass/style.scss */
+/* line 1108, ../sass/style.scss */
 .parking-more {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -1411,7 +1545,7 @@ header {
   line-height: 18px;
   margin-bottom: 80px;
 }
-/* line 1009, ../sass/style.scss */
+/* line 1114, ../sass/style.scss */
 .parking-more p.parking-more__title {
   color: #023574;
   font-size: 48px;
@@ -1419,7 +1553,15 @@ header {
   font-weight: 600;
   margin-bottom: 30px;
 }
-/* line 1016, ../sass/style.scss */
+/* line 1121, ../sass/style.scss */
+.parking-more p.parking-more__sub-title {
+  color: #023574;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+/* line 1128, ../sass/style.scss */
 .parking-more p {
   color: rgba(0, 0, 0, 0.87);
   line-height: 28px;
@@ -1428,14 +1570,14 @@ header {
   font-weight: 500;
 }
 
-/* line 1024, ../sass/style.scss */
+/* line 1136, ../sass/style.scss */
 #map-parking {
   background-color: grey;
   height: 355px;
   margin-bottom: 80px;
 }
 
-/* line 1029, ../sass/style.scss */
+/* line 1141, ../sass/style.scss */
 .places {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -1443,7 +1585,7 @@ header {
   font-variant-numeric: lining-nums;
   margin-bottom: 80px;
 }
-/* line 1032, ../sass/style.scss */
+/* line 1144, ../sass/style.scss */
 .places__title {
   color: #023574;
   font-weight: 600;
@@ -1451,7 +1593,7 @@ header {
   line-height: 57px;
   margin-bottom: 30px;
 }
-/* line 1040, ../sass/style.scss */
+/* line 1152, ../sass/style.scss */
 .places__body__card {
   background-color: #FFFFFF;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1460,25 +1602,25 @@ header {
   flex-direction: row;
   height: 200px;
 }
-/* line 1047, ../sass/style.scss */
+/* line 1159, ../sass/style.scss */
 .places__body__card__img {
   position: relative;
   overflow: hidden;
   height: 100%;
   width: 265px;
 }
-/* line 1052, ../sass/style.scss */
+/* line 1164, ../sass/style.scss */
 .places__body__card__img img {
   height: 100%;
 }
-/* line 1056, ../sass/style.scss */
+/* line 1168, ../sass/style.scss */
 .places__body__card__info {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   padding: 32px;
 }
-/* line 1061, ../sass/style.scss */
+/* line 1173, ../sass/style.scss */
 .places__body__card__info__title {
   font-size: 24px;
   line-height: 29px;
@@ -1486,7 +1628,7 @@ header {
   color: #023574;
   margin-bottom: 10px;
 }
-/* line 1068, ../sass/style.scss */
+/* line 1180, ../sass/style.scss */
 .places__body__card__info__address {
   color: rgba(0, 0, 0, 0.87);
   font-weight: 500;
@@ -1495,13 +1637,13 @@ header {
   letter-spacing: 0.5px;
   margin-bottom: 10px;
 }
-/* line 1076, ../sass/style.scss */
+/* line 1188, ../sass/style.scss */
 .places__body__card__info__link {
   margin-top: auto;
   display: flex;
   flex-direction: row;
 }
-/* line 1080, ../sass/style.scss */
+/* line 1192, ../sass/style.scss */
 .places__body__card__info__link a {
   display: inline-block;
   border: 1px solid #3892CE;
@@ -1513,16 +1655,16 @@ header {
   padding: 8px 20px 6px 20px;
   margin-right: 8px;
 }
-/* line 1090, ../sass/style.scss */
+/* line 1202, ../sass/style.scss */
 .places__body__card__info__link a:hover {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
 }
-/* line 1096, ../sass/style.scss */
+/* line 1208, ../sass/style.scss */
 .places__body__card__button {
   padding: 32px;
 }
 
-/* line 1102, ../sass/style.scss */
+/* line 1214, ../sass/style.scss */
 .places-more {
   margin-bottom: 80px;
   font-family: "Raleway", sans-serif;
@@ -1530,7 +1672,7 @@ header {
   font-style: normal;
   font-variant-numeric: lining-nums;
 }
-/* line 1105, ../sass/style.scss */
+/* line 1217, ../sass/style.scss */
 .places-more__title {
   color: #023574;
   font-size: 48px;
@@ -1538,36 +1680,36 @@ header {
   font-weight: 600;
   margin-bottom: 30px;
 }
-/* line 1113, ../sass/style.scss */
+/* line 1225, ../sass/style.scss */
 .places-more__body__card {
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   position: relative;
 }
-/* line 1120, ../sass/style.scss */
+/* line 1232, ../sass/style.scss */
 .places-more__body__card:nth-child(2n) .places-more__body__card__img {
   order: 1;
 }
-/* line 1123, ../sass/style.scss */
+/* line 1235, ../sass/style.scss */
 .places-more__body__card:nth-child(2n) .places-more__body__card__text {
   padding-left: 0;
   padding-right: 40px;
 }
-/* line 1129, ../sass/style.scss */
+/* line 1241, ../sass/style.scss */
 .places-more__body__card__img {
   width: 40%;
   flex-shrink: 0;
   position: relative;
 }
-/* line 1133, ../sass/style.scss */
+/* line 1245, ../sass/style.scss */
 .places-more__body__card__img__wrap {
   overflow: hidden;
   height: 0;
   padding-top: 62%;
   position: relative;
 }
-/* line 1138, ../sass/style.scss */
+/* line 1250, ../sass/style.scss */
 .places-more__body__card__img__wrap img {
   position: absolute;
   top: 50%;
@@ -1576,14 +1718,14 @@ header {
   width: 100%;
   height: auto;
 }
-/* line 1148, ../sass/style.scss */
+/* line 1260, ../sass/style.scss */
 .places-more__body__card__text {
   display: flex;
   align-items: center;
   padding-left: 40px;
   padding-right: auto;
 }
-/* line 1153, ../sass/style.scss */
+/* line 1265, ../sass/style.scss */
 .places-more__body__card__text p {
   color: rgba(0, 0, 0, 0.87);
   font-weight: 500;
@@ -1728,533 +1870,564 @@ header {
   }
 
   /* line 88, ../sass/_media.scss */
-  .how-works__body__card__wrapp {
-    min-height: 200px;
-  }
-
-  /* line 91, ../sass/_media.scss */
   .how-works__body__card__wrapp__ico {
     height: 100px;
     padding: 5px 0;
   }
 
-  /* line 95, ../sass/_media.scss */
+  /* line 92, ../sass/_media.scss */
   .how-works__body__card__wrapp__text .how-works__body__card__wrapp__text__title {
     margin-bottom: 5px;
   }
 
-  /* line 98, ../sass/_media.scss */
+  /* line 95, ../sass/_media.scss */
   .how-works__title {
     font-size: 42px;
     line-height: 52px;
     margin-bottom: 15px;
   }
 
-  /* line 103, ../sass/_media.scss */
+  /* line 100, ../sass/_media.scss */
   .how-works {
     margin-bottom: 40px;
   }
 
-  /* line 106, ../sass/_media.scss */
+  /* line 103, ../sass/_media.scss */
   .parking-about__text h2 {
     font-size: 32px;
     line-height: 36px;
     margin-bottom: 25px;
   }
 
-  /* line 111, ../sass/_media.scss */
+  /* line 108, ../sass/_media.scss */
   .parking-about__text p {
     margin-bottom: 15px;
   }
 
-  /* line 114, ../sass/_media.scss */
+  /* line 111, ../sass/_media.scss */
   .parking-about {
     margin-bottom: 40px;
   }
 
-  /* line 117, ../sass/_media.scss */
+  /* line 114, ../sass/_media.scss */
   .first-look__card__img {
     padding: 10px 0;
     height: 90px;
   }
 
-  /* line 121, ../sass/_media.scss */
+  /* line 118, ../sass/_media.scss */
   .first-look__card__text {
     padding: 15px;
     font-size: 15px;
   }
 
-  /* line 125, ../sass/_media.scss */
-  .first-look__card {
-    min-height: 190px;
-  }
-
-  /* line 128, ../sass/_media.scss */
+  /* line 122, ../sass/_media.scss */
   .first-look__bg {
     height: 250px;
   }
 
-  /* line 131, ../sass/_media.scss */
+  /* line 125, ../sass/_media.scss */
   #first-look {
     margin-bottom: 60px;
   }
 
-  /* line 134, ../sass/_media.scss */
+  /* line 128, ../sass/_media.scss */
   .reservation__text h2 {
     font-size: 42px;
     line-height: 48px;
     margin-bottom: 20px;
   }
 
-  /* line 139, ../sass/_media.scss */
+  /* line 133, ../sass/_media.scss */
   .reservation__text p {
     margin-bottom: 10px;
   }
 
-  /* line 142, ../sass/_media.scss */
+  /* line 136, ../sass/_media.scss */
   .reservation__text {
     line-height: 22px;
   }
 
-  /* line 145, ../sass/_media.scss */
+  /* line 139, ../sass/_media.scss */
   .reservation__block__wrap {
     padding: 15px 20px;
   }
 
-  /* line 148, ../sass/_media.scss */
+  /* line 142, ../sass/_media.scss */
   .reservation__block__wrap__title {
     line-height: 40px;
   }
 
-  /* line 151, ../sass/_media.scss */
+  /* line 145, ../sass/_media.scss */
   .reservation__block__wrap__sub-title {
     padding-bottom: 10px;
   }
 
-  /* line 154, ../sass/_media.scss */
+  /* line 148, ../sass/_media.scss */
   .reservation__block__wrap__par {
     margin-bottom: 15px;
   }
 
-  /* line 157, ../sass/_media.scss */
+  /* line 151, ../sass/_media.scss */
   .partners__title {
     font-size: 42px;
     line-height: 48px;
     margin-bottom: 25px;
   }
 
-  /* line 162, ../sass/_media.scss */
+  /* line 156, ../sass/_media.scss */
   .partners__body__card__wrap {
     padding: 0 5%;
   }
 
-  /* line 165, ../sass/_media.scss */
+  /* line 159, ../sass/_media.scss */
   .partners {
     margin-bottom: 40px;
   }
 
-  /* line 168, ../sass/_media.scss */
+  /* line 162, ../sass/_media.scss */
   #subscribe {
     padding: 30px 0;
   }
 
-  /* line 171, ../sass/_media.scss */
+  /* line 165, ../sass/_media.scss */
   .footer__subscribe__title {
     font-size: 32px;
     line-height: 42px;
   }
 
-  /* line 175, ../sass/_media.scss */
+  /* line 169, ../sass/_media.scss */
   .footer__subscribe__sub-title {
     font-size: 14px;
   }
 
-  /* line 178, ../sass/_media.scss */
+  /* line 172, ../sass/_media.scss */
   .footer__subscribe__input {
     width: 100%;
   }
 
-  /* line 181, ../sass/_media.scss */
+  /* line 175, ../sass/_media.scss */
   .footer__info__about__logo {
     margin-bottom: 10px;
   }
 
-  /* line 184, ../sass/_media.scss */
+  /* line 178, ../sass/_media.scss */
   .footer__info__about p {
     margin-bottom: 10px;
   }
 
-  /* line 187, ../sass/_media.scss */
+  /* line 181, ../sass/_media.scss */
   .footer__info__property__block__title {
     margin-bottom: 5px;
   }
 
-  /* line 190, ../sass/_media.scss */
+  /* line 184, ../sass/_media.scss */
   .footer__info__property__block ul li {
     margin-bottom: 0;
   }
 
-  /* line 193, ../sass/_media.scss */
+  /* line 187, ../sass/_media.scss */
   .footer__info__property__block ul {
     margin-bottom: 0;
   }
 
-  /* line 196, ../sass/_media.scss */
+  /* line 190, ../sass/_media.scss */
   .footer__info__property__block {
     margin-bottom: 20px;
   }
 
-  /* line 199, ../sass/_media.scss */
+  /* line 193, ../sass/_media.scss */
   .footer__info__information__title {
     margin-bottom: 5px;
   }
 
-  /* line 202, ../sass/_media.scss */
+  /* line 196, ../sass/_media.scss */
   .footer__info__information ul {
     margin-bottom: 0;
   }
 
-  /* line 205, ../sass/_media.scss */
+  /* line 199, ../sass/_media.scss */
   .footer__info__information ul li {
     margin-bottom: 0;
   }
 
-  /* line 208, ../sass/_media.scss */
+  /* line 202, ../sass/_media.scss */
   .footer__info__social ul li a {
     white-space: nowrap;
   }
 
-  /* line 211, ../sass/_media.scss */
+  /* line 205, ../sass/_media.scss */
   .footer__info__social__label {
     width: 100%;
     margin-top: 30px;
   }
 
-  /* line 215, ../sass/_media.scss */
+  /* line 209, ../sass/_media.scss */
   .calendar__info {
     margin-top: 75px;
   }
 
-  /* line 218, ../sass/_media.scss */
+  /* line 212, ../sass/_media.scss */
   .works-about p.works-about__title, .places-more__title, .places__title, .parking-more p.parking-more__title {
     font-size: 42px;
     line-height: 52px;
     margin-bottom: 15px;
   }
 
-  /* line 223, ../sass/_media.scss */
+  /* line 217, ../sass/_media.scss */
   .places__body__card__img {
     width: 170px;
     flex-shrink: 0;
   }
 
-  /* line 227, ../sass/_media.scss */
+  /* line 221, ../sass/_media.scss */
   .places__body__card {
     height: 180px;
   }
 
-  /* line 230, ../sass/_media.scss */
+  /* line 224, ../sass/_media.scss */
   .places__body__card__info {
     padding: 18px;
   }
 
-  /* line 233, ../sass/_media.scss */
+  /* line 227, ../sass/_media.scss */
   .places__body__card__info__title {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 5px;
   }
 
-  /* line 238, ../sass/_media.scss */
+  /* line 232, ../sass/_media.scss */
   .places__body__card__info__address {
     font-size: 15px;
     line-height: 20px;
   }
 
-  /* line 242, ../sass/_media.scss */
+  /* line 236, ../sass/_media.scss */
   .places__body__card__button {
     padding: 13px;
   }
 
-  /* line 245, ../sass/_media.scss */
+  /* line 239, ../sass/_media.scss */
   .works-about, .parking-more, #map-parking, .places, .places-more {
     margin-bottom: 50px;
   }
 
-  /* line 248, ../sass/_media.scss */
+  /* line 242, ../sass/_media.scss */
   .places-more__body__card {
     margin-bottom: 20px;
   }
+
+  /* line 245, ../sass/_media.scss */
+  .first-look.mod-option .first-look__card__img {
+    padding: 30px 20px 10px;
+  }
+
+  /* line 248, ../sass/_media.scss */
+  .first-look__card__img__text {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  /* line 253, ../sass/_media.scss */
+  .first-look.mod-option .first-look__card__img::before {
+    left: 20px;
+  }
+
+  /* line 256, ../sass/_media.scss */
+  #header__calendar.mod-option .calendar__body {
+    margin-bottom: 55px;
+  }
+
+  /* line 259, ../sass/_media.scss */
+  #header__calendar.mod-option {
+    margin-bottom: -85px;
+  }
 }
 @media screen and (max-width: 767px) {
-  /* line 253, ../sass/_media.scss */
+  /* line 264, ../sass/_media.scss */
+  #header__calendar.mod-option .calendar__body {
+    margin-bottom: 0;
+  }
+
+  /* line 267, ../sass/_media.scss */
+  .first-look__bg.mod-option {
+    display: none;
+  }
+
+  /* line 270, ../sass/_media.scss */
   .navigation-bar__info {
     padding: 0;
     justify-content: space-around;
     display: flex;
   }
 
-  /* line 258, ../sass/_media.scss */
+  /* line 275, ../sass/_media.scss */
   .navigation-bar__nav {
     margin-top: 0;
   }
 
-  /* line 261, ../sass/_media.scss */
+  /* line 278, ../sass/_media.scss */
   .calendar__title {
     font-size: 36px;
     line-height: 42px;
   }
 
-  /* line 265, ../sass/_media.scss */
+  /* line 282, ../sass/_media.scss */
   .calendar__body {
     height: auto;
   }
 
-  /* line 268, ../sass/_media.scss */
+  /* line 285, ../sass/_media.scss */
   .calendar__body__point {
     padding: 10px 20px;
   }
 
-  /* line 271, ../sass/_media.scss */
+  /* line 288, ../sass/_media.scss */
   .calendar__body__point__input-date:nth-child(1):before {
     height: 0;
   }
 
-  /* line 274, ../sass/_media.scss */
+  /* line 291, ../sass/_media.scss */
   .calendar__body__point.button-block {
     margin-top: 5px;
     margin-bottom: 10px;
   }
 
-  /* line 278, ../sass/_media.scss */
+  /* line 295, ../sass/_media.scss */
   .parking-about__text h2 {
     font-size: 24px;
     line-height: 26px;
     margin-bottom: 15px;
   }
 
-  /* line 283, ../sass/_media.scss */
+  /* line 300, ../sass/_media.scss */
   .parking-about__text p {
     letter-spacing: 0;
     margin-bottom: 10px;
   }
 
-  /* line 287, ../sass/_media.scss */
+  /* line 304, ../sass/_media.scss */
   .parking-about__text {
     font-size: 14px;
     line-height: 16px;
   }
 
-  /* line 291, ../sass/_media.scss */
+  /* line 308, ../sass/_media.scss */
   .first-look__title {
     font-size: 36px;
     line-height: 48px;
   }
 
-  /* line 295, ../sass/_media.scss */
+  /* line 312, ../sass/_media.scss */
   #first-look {
     padding-top: 25px;
     margin-bottom: 20px;
   }
 
-  /* line 299, ../sass/_media.scss */
-  .first-look__card {
-    min-height: 170px;
+  /* line 316, ../sass/_media.scss */
+  .first-look > div {
     margin-bottom: 30px;
   }
 
-  /* line 303, ../sass/_media.scss */
+  /* line 319, ../sass/_media.scss */
   .first-look__bg {
     height: 220px;
   }
 
-  /* line 306, ../sass/_media.scss */
+  /* line 322, ../sass/_media.scss */
   .partners__body {
     flex-wrap: wrap;
   }
 
-  /* line 309, ../sass/_media.scss */
+  /* line 325, ../sass/_media.scss */
   .partners__body__card {
     width: 30%;
     margin-bottom: 20px;
   }
 
-  /* line 313, ../sass/_media.scss */
+  /* line 329, ../sass/_media.scss */
   .partners__body__card__wrap {
     padding: 0 10%;
   }
 
-  /* line 316, ../sass/_media.scss */
+  /* line 332, ../sass/_media.scss */
   .footer__subscribe__block {
     margin-bottom: 15px;
   }
 
-  /* line 319, ../sass/_media.scss */
+  /* line 335, ../sass/_media.scss */
   .footer__info__social__label {
     width: 50%;
   }
 
-  /* line 322, ../sass/_media.scss */
+  /* line 338, ../sass/_media.scss */
   .works-about ul li {
     line-height: 18px;
   }
 
-  /* line 325, ../sass/_media.scss */
+  /* line 341, ../sass/_media.scss */
   .parking-more p {
     margin-bottom: 10px;
     line-height: 22px;
   }
 
-  /* line 329, ../sass/_media.scss */
+  /* line 345, ../sass/_media.scss */
   .places__body__card__img {
     width: 35%;
     height: auto;
   }
 
-  /* line 333, ../sass/_media.scss */
+  /* line 349, ../sass/_media.scss */
   .places__body__card__img img {
     height: auto;
     width: 100%;
   }
 
-  /* line 337, ../sass/_media.scss */
+  /* line 353, ../sass/_media.scss */
   .places__body__card {
     align-items: flex-start;
     flex-wrap: wrap;
     height: auto;
   }
 
-  /* line 342, ../sass/_media.scss */
+  /* line 358, ../sass/_media.scss */
   .places__body__card__info {
     width: 65%;
     padding: 8px 14px;
   }
 
-  /* line 346, ../sass/_media.scss */
+  /* line 362, ../sass/_media.scss */
   .places__body__card__button {
     padding: 0;
     width: 35%;
   }
 
-  /* line 350, ../sass/_media.scss */
+  /* line 366, ../sass/_media.scss */
   .places__body__card__button .yellow-btn {
     width: 100%;
   }
 
-  /* line 353, ../sass/_media.scss */
+  /* line 369, ../sass/_media.scss */
   .places__body__card__info__link a {
     padding: 4px 14px 2px 14px;
   }
 
-  /* line 356, ../sass/_media.scss */
+  /* line 372, ../sass/_media.scss */
   .works-about p.works-about__title, .places-more__title, .places__title, .parking-more p.parking-more__title {
     font-size: 32px;
     line-height: 36px;
   }
 
-  /* line 360, ../sass/_media.scss */
+  /* line 376, ../sass/_media.scss */
   .places-more__body__card {
     flex-wrap: wrap;
     margin-bottom: 30px;
   }
 
-  /* line 364, ../sass/_media.scss */
+  /* line 380, ../sass/_media.scss */
   .places-more__body__card__img {
     width: 100%;
     margin-bottom: 10px;
   }
 
-  /* line 368, ../sass/_media.scss */
+  /* line 384, ../sass/_media.scss */
   .places-more__body__card__text {
     padding: 0 5px;
     text-align: center;
   }
 
-  /* line 372, ../sass/_media.scss */
+  /* line 388, ../sass/_media.scss */
   .places-more__body__card:nth-child(2n) .places-more__body__card__text {
     padding: 0 5px;
     text-align: center;
   }
 
-  /* line 376, ../sass/_media.scss */
+  /* line 392, ../sass/_media.scss */
   .places-more__body__card:nth-child(2n) .places-more__body__card__img {
     order: 0;
   }
 
-  /* line 379, ../sass/_media.scss */
+  /* line 395, ../sass/_media.scss */
   .calendar__info {
     display: none;
   }
 }
 @media screen and (max-width: 574px) {
-  /* line 384, ../sass/_media.scss */
+  /* line 400, ../sass/_media.scss */
+  .first-look.mod-option {
+    padding-bottom: 0;
+  }
+
+  /* line 403, ../sass/_media.scss */
   .navigation-bar__info {
     display: none;
     flex-wrap: wrap;
     margin-bottom: 10px;
   }
 
-  /* line 389, ../sass/_media.scss */
+  /* line 408, ../sass/_media.scss */
   .navigation-bar__nav {
     display: none;
   }
 
-  /* line 392, ../sass/_media.scss */
+  /* line 411, ../sass/_media.scss */
   .navigation-bar__collapse {
     display: block;
   }
 
-  /* line 395, ../sass/_media.scss */
+  /* line 414, ../sass/_media.scss */
   .navigation-bar__info span {
     margin: 10px;
   }
 
-  /* line 398, ../sass/_media.scss */
+  /* line 417, ../sass/_media.scss */
   .navigation-bar__info a {
     margin: 10px;
   }
 
-  /* line 401, ../sass/_media.scss */
+  /* line 420, ../sass/_media.scss */
   .navigation-bar__nav ul li {
     margin-right: 0;
   }
 
-  /* line 404, ../sass/_media.scss */
+  /* line 423, ../sass/_media.scss */
   .navigation-bar__nav nav {
     align-items: center;
     flex-direction: column;
   }
 
-  /* line 408, ../sass/_media.scss */
+  /* line 427, ../sass/_media.scss */
   .navigation-bar__nav ul {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
   }
 
-  /* line 413, ../sass/_media.scss */
+  /* line 432, ../sass/_media.scss */
   .navigation-bar__nav__language {
     margin-left: 0;
     width: 100%;
   }
 
-  /* line 417, ../sass/_media.scss */
+  /* line 436, ../sass/_media.scss */
   .navigation-bar__nav__language:before {
     width: 0;
   }
 
-  /* line 420, ../sass/_media.scss */
+  /* line 439, ../sass/_media.scss */
   .navigation-bar__nav__language__active a {
     height: 22px;
     padding-right: 36px;
   }
 
-  /* line 424, ../sass/_media.scss */
+  /* line 443, ../sass/_media.scss */
   .navigation-bar__nav__language__active {
     text-align: center;
   }
 
-  /* line 427, ../sass/_media.scss */
+  /* line 446, ../sass/_media.scss */
   .navigation-bar__nav__language__active a:before {
     right: 10px;
     width: 15px;
@@ -2262,7 +2435,7 @@ header {
     top: 8px;
   }
 
-  /* line 433, ../sass/_media.scss */
+  /* line 452, ../sass/_media.scss */
   .navigation-bar__nav__language__drop {
     width: 100vw;
     left: 50%;
@@ -2270,25 +2443,25 @@ header {
     text-align: center;
   }
 
-  /* line 439, ../sass/_media.scss */
+  /* line 458, ../sass/_media.scss */
   .calendar__title {
     font-size: 26px;
     line-height: 28px;
   }
 
-  /* line 443, ../sass/_media.scss */
+  /* line 462, ../sass/_media.scss */
   .calendar {
     height: 400px;
   }
 
-  /* line 446, ../sass/_media.scss */
+  /* line 465, ../sass/_media.scss */
   .calendar__body__point__input-date {
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
   }
 
-  /* line 451, ../sass/_media.scss */
+  /* line 470, ../sass/_media.scss */
   .calendar__body__point__input-date:before {
     width: 95%;
     height: 2px;
@@ -2297,201 +2470,191 @@ header {
     top: 0;
   }
 
-  /* line 458, ../sass/_media.scss */
+  /* line 477, ../sass/_media.scss */
   .calendar__body__point__input-date:nth-child(1):before {
     height: 2px;
   }
 
-  /* line 461, ../sass/_media.scss */
+  /* line 480, ../sass/_media.scss */
   .calendar__footer__body__rate {
     margin-right: 0;
     margin-bottom: 10px;
     margin-top: 10px;
   }
 
-  /* line 466, ../sass/_media.scss */
+  /* line 485, ../sass/_media.scss */
   .calendar__footer__body__link a {
     text-align: center;
     padding: 0 30px;
   }
 
-  /* line 470, ../sass/_media.scss */
+  /* line 489, ../sass/_media.scss */
   .calendar__footer {
     height: 90px;
     bottom: -90px;
   }
 
-  /* line 474, ../sass/_media.scss */
+  /* line 493, ../sass/_media.scss */
   #header__calendar {
     margin-bottom: 110px;
   }
 
-  /* line 477, ../sass/_media.scss */
+  /* line 496, ../sass/_media.scss */
   .how-works__title {
     font-size: 30px;
     line-height: 44px;
   }
 
-  /* line 481, ../sass/_media.scss */
+  /* line 500, ../sass/_media.scss */
   .how-works__body__card {
     margin-bottom: 15px;
   }
 
-  /* line 484, ../sass/_media.scss */
+  /* line 503, ../sass/_media.scss */
   .parking-about__images {
     width: 260px;
     margin: 0 auto;
   }
 
-  /* line 488, ../sass/_media.scss */
+  /* line 507, ../sass/_media.scss */
   .how-works {
     margin-bottom: 20px;
   }
 
-  /* line 491, ../sass/_media.scss */
-  .first-look__card {
-    min-height: auto;
-  }
-
-  /* line 494, ../sass/_media.scss */
-  .how-works__body__card__wrapp {
-    min-height: auto;
-  }
-
-  /* line 497, ../sass/_media.scss */
+  /* line 510, ../sass/_media.scss */
   .first-look__title {
     font-size: 28px;
     line-height: 36px;
   }
 
-  /* line 501, ../sass/_media.scss */
+  /* line 514, ../sass/_media.scss */
   .reservation__text h2 {
     font-size: 34px;
     line-height: 34px;
   }
 
-  /* line 505, ../sass/_media.scss */
+  /* line 518, ../sass/_media.scss */
   .reservation__block__wrap__title {
     font-size: 32px;
   }
 
-  /* line 508, ../sass/_media.scss */
+  /* line 521, ../sass/_media.scss */
   .reservation__block__wrap__sub-title {
     font-size: 28px;
     line-height: 44px;
   }
 
-  /* line 512, ../sass/_media.scss */
+  /* line 525, ../sass/_media.scss */
   .partners__title {
     padding: 0 15px;
     font-size: 36px;
     line-height: 38px;
   }
 
-  /* line 517, ../sass/_media.scss */
+  /* line 530, ../sass/_media.scss */
   .partners__body__card {
     width: 50%;
   }
 
-  /* line 520, ../sass/_media.scss */
+  /* line 533, ../sass/_media.scss */
   .footer__subscribe {
     padding: 0 15px;
   }
 
-  /* line 523, ../sass/_media.scss */
+  /* line 536, ../sass/_media.scss */
   .footer__subscribe__title {
     font-size: 24px;
     line-height: 28px;
   }
 
-  /* line 527, ../sass/_media.scss */
+  /* line 540, ../sass/_media.scss */
   .footer__subscribe__sub-title {
     line-height: 20px;
   }
 
-  /* line 530, ../sass/_media.scss */
+  /* line 543, ../sass/_media.scss */
   .footer__subscribe__input__text {
     padding: 0 5px;
   }
 
-  /* line 533, ../sass/_media.scss */
+  /* line 546, ../sass/_media.scss */
   .footer__subscribe__input__submit {
     padding: 0 5px;
   }
 
-  /* line 536, ../sass/_media.scss */
+  /* line 549, ../sass/_media.scss */
   .footer__info__about__logo {
     text-align: center;
   }
 
-  /* line 539, ../sass/_media.scss */
+  /* line 552, ../sass/_media.scss */
   #footer {
     padding: 30px 0;
   }
 
-  /* line 542, ../sass/_media.scss */
+  /* line 555, ../sass/_media.scss */
   .footer__info__about p {
     text-align: center;
   }
 
-  /* line 545, ../sass/_media.scss */
+  /* line 558, ../sass/_media.scss */
   .footer__info__property__block {
     text-align: center;
   }
 
-  /* line 548, ../sass/_media.scss */
+  /* line 561, ../sass/_media.scss */
   .footer__info__information {
     text-align: center;
   }
 
-  /* line 551, ../sass/_media.scss */
+  /* line 564, ../sass/_media.scss */
   .footer__info__social {
     text-align: center;
     margin-top: 15px;
   }
 
-  /* line 555, ../sass/_media.scss */
+  /* line 568, ../sass/_media.scss */
   .footer__info__social__label {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 559, ../sass/_media.scss */
+  /* line 572, ../sass/_media.scss */
   .works-about ul li {
     padding-left: 25px;
   }
 
-  /* line 562, ../sass/_media.scss */
+  /* line 575, ../sass/_media.scss */
   .works-about p.works-about__title, .places-more__title, .places__title, .parking-more p.parking-more__title {
     font-size: 26px;
     line-height: 28px;
   }
 
-  /* line 566, ../sass/_media.scss */
+  /* line 579, ../sass/_media.scss */
   .places__body__card__img {
     width: 100%;
     height: 140px;
   }
 
-  /* line 570, ../sass/_media.scss */
+  /* line 583, ../sass/_media.scss */
   .places__body__card__img img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
 
-  /* line 575, ../sass/_media.scss */
+  /* line 588, ../sass/_media.scss */
   .places__body__card__info {
     width: 100%;
   }
 
-  /* line 578, ../sass/_media.scss */
+  /* line 591, ../sass/_media.scss */
   .places__body__card__button {
     width: 100%;
     margin-top: 10px;
   }
 
-  /* line 582, ../sass/_media.scss */
+  /* line 595, ../sass/_media.scss */
   .works-about, .parking-more, #map-parking, .places, .places-more {
     margin-left: 0;
     margin-right: 0;

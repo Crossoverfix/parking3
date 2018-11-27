@@ -205,10 +205,18 @@ header{
   }
 }
 #header__calendar{
-  background: url("../img/img_main.jpg")no-repeat center grey;
+  background: url("../img/img_main.jpg")no-repeat center #3892CE;
   background-size: cover;
   position: relative;
   margin-bottom: 40px;
+  &.mod-option{
+    background: url("")#3892CE;
+    margin-bottom: -45px;
+    .calendar{
+      height: auto;
+      padding: 12px 0;
+    }
+  }
 }
 .calendar{
   height: 656px;
@@ -495,7 +503,7 @@ header{
       &__wrapp{
         box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
         position: relative;
-        min-height: 290px;
+        height: 100%;
         background-color: white;
         &__ico{
           height: 140px;
@@ -568,6 +576,56 @@ header{
       letter-spacing: 0.5px;
       margin-bottom: 25px;
     }
+    ul{
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 30px;
+      li{
+        font-weight: 500;
+        padding-left: 35px;
+        color: rgba(0,0,0,0.87);
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
+        position: relative;
+        &:before{
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 3px;
+          width: 16px;
+          height: 16px;
+          background-color: $c-yellow;
+        }
+      }
+    }
+    ol{
+      padding-left: 0;
+      list-style-type: none;
+      counter-reset: num;
+      li{
+        padding-left: 40px;
+        position: relative;
+        margin-bottom: 10px;
+        @include raleway(500,normal);
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        color: rgba(0,0,0,0.87);
+        &:before{
+          content: counter(num)'.';
+          counter-increment: num;
+          position: absolute;
+          top: 1px;
+          left: 15px;
+          @include raleway(600,normal);
+          font-size: 15px;
+          line-height: 20px;
+          letter-spacing: 0.5px;
+          color: rgba(0,0,0,0.87);
+        }
+      }
+    }
   }
 }
 #first-look{
@@ -576,6 +634,20 @@ header{
   margin-bottom: 80px;
 }
 .first-look{
+  &.mod-option{
+    padding-bottom: 55px;
+    .first-look__card{
+      &__img{
+        height: auto;
+        padding: 40px 35px 10px 35px;
+        text-align: left;
+        &:before{
+          transform: translateX(0);
+          left: 35px;
+        }
+      }
+    }
+  }
   &__bg{
     width: 100%;
     background-color: $c-yellow;
@@ -584,6 +656,11 @@ header{
     left: 0;
     height: 300px;
     box-shadow: 2px 2px 8px 0 rgba(0,0,0,0.1), 0 2px 16px 0 rgba(0,0,0,0.1);
+    &.mod-option{
+      top: auto;
+      bottom: 0;
+      height: 65%;
+    }
   }
   &__title{
     @include raleway(600,normal);
@@ -593,12 +670,28 @@ header{
     margin-bottom: 25px;
     position: relative;
   }
+  &__sub-title{
+    @include raleway(600,normal);
+    font-size: 24px;
+    line-height: 29px;
+    color: $c-blue;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  &__par{
+    @include raleway(600,normal);
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0,0,0,0.87);
+    margin-bottom: 30px;
+    position: relative;
+  }
   &__card{
     width: 100%;
     position: relative;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
     background-color: white;
-    min-height: 220px;
+    height: 100%;
     &__img{
       width: 100%;
       padding: 30px 0 25px 0;
@@ -618,6 +711,12 @@ header{
       img{
         height: 100%;
       }
+      &__text{
+        @include raleway(600,normal);
+        font-size: 24px;
+        color: $c-blue;
+        line-height: 29px;
+      }
     }
     &__text{
       padding: 10px 35px 20px 35px;
@@ -630,6 +729,12 @@ header{
         color: $c-blue;
         text-align: center;
         text-shadow: 0 2px 4px  rgba(0,0,0,0.15);
+      }
+      &__par{
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        color: rgba(0,0,0,0.87);
       }
     }
   }
@@ -1012,6 +1117,13 @@ header{
     line-height: 57px;
     font-weight: 600;
     margin-bottom: 30px;
+  }
+  p.parking-more__sub-title{
+    color: $c-blue;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    margin-bottom: 10px;
   }
   p{
     color: rgba(0,0,0,0.87);

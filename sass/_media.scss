@@ -85,9 +85,6 @@
   .how-works__body__card{
     margin-bottom: 30px;
   }
-  .how-works__body__card__wrapp{
-    min-height: 200px;
-  }
   .how-works__body__card__wrapp__ico {
     height: 100px;
     padding: 5px 0;
@@ -121,9 +118,6 @@
   .first-look__card__text{
     padding: 15px;
     font-size: 15px;
-  }
-  .first-look__card{
-    min-height: 190px;
   }
   .first-look__bg{
     height: 250px;
@@ -248,8 +242,31 @@
   .places-more__body__card{
     margin-bottom: 20px;
   }
+  .first-look.mod-option .first-look__card__img{
+    padding: 30px 20px 10px;
+  }
+  .first-look__card__img__text{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .first-look.mod-option .first-look__card__img::before{
+    left: 20px;
+  }
+  #header__calendar.mod-option .calendar__body{
+    margin-bottom: 55px;
+  }
+  #header__calendar.mod-option{
+    margin-bottom: -85px;
+  }
 }
 @media screen and (max-width: 767px){
+  #header__calendar.mod-option .calendar__body{
+    margin-bottom: 0;
+  }
+  .first-look__bg.mod-option{
+    display: none;
+  }
   .navigation-bar__info{
     padding: 0;
     justify-content: space-around;
@@ -296,8 +313,7 @@
     padding-top: 25px;
     margin-bottom: 20px;
   }
-  .first-look__card {
-    min-height: 170px;
+  .first-look > div {
     margin-bottom: 30px;
   }
   .first-look__bg{
@@ -381,6 +397,9 @@
   }
 }
 @media screen and (max-width: 574px){
+  .first-look.mod-option{
+    padding-bottom: 0;
+  }
   .navigation-bar__info{
     display: none;
     flex-wrap: wrap;
@@ -487,12 +506,6 @@
   }
   .how-works{
     margin-bottom: 20px;
-  }
-  .first-look__card{
-    min-height: auto;
-  }
-  .how-works__body__card__wrapp{
-    min-height: auto;
   }
   .first-look__title{
     font-size: 28px;
