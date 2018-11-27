@@ -284,6 +284,7 @@
   .navigation-bar__info{
     display: none;
     flex-wrap: wrap;
+    margin-bottom: 10px;
   }
   .navigation-bar__nav{
     display: none;
@@ -292,10 +293,10 @@
     display: block;
   }
   .navigation-bar__info span{
-    margin: 10px 0;
+    margin: 10px;
   }
   .navigation-bar__info a{
-    margin-bottom: 10px;
+    margin: 10px;
   }
   .navigation-bar__nav nav{
     align-items: center;
