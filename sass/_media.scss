@@ -397,6 +397,22 @@
   }
 }
 @media screen and (max-width: 574px){
+  .contact__title{
+    font-size: 26px;
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+  .contact__info__title,.resolution__title{
+    font-size: 20px;
+  }
+  .contact__info__title{
+    font-weight: 500;
+  }
+  .resolution,.contact{
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
   .first-look.mod-option{
     padding-bottom: 0;
   }

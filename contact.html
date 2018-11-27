@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Parking</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div id="header__nav-bar" class="container-fluid">
+        <div class="container">
+            <div class="row navigation-bar">
+                <div class="navigation-bar__logo col-lg-2 col-md-4 col-10">
+                    <a href="index.html">
+                        <picture>
+                            <img src="img/McParking.svg" alt="logo">
+                        </picture>
+                    </a>
+                </div>
+                <div class="navigation-bar__collapse col-2">
+                    <a id="collapse__nav-bar" href="#">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </a>
+                </div>
+                <div class="navigation-bar__info col-lg-4 col-md-8 col-12">
+                    <span>Serviceline 9:00-19:00</span>
+                    <a href="tel:+4903041400300">+49 (0)30 41 400 300</a>
+                </div>
+                <div class="navigation-bar__nav col-lg-6 col-12">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Corporate Clients</a>
+                            </li>
+                            <li>
+                                <a href="#">Travel Agencies</a>
+                            </li>
+                            <li>
+                                <a href="#">Login</a>
+                            </li>
+                        </ul>
+                        <div class="navigation-bar__nav__language">
+                            <div class="navigation-bar__nav__language__active">
+                                <a id="nav-bar__language" href="#">
+                                    <picture>
+                                        <source srcset="img/uk_flag.png">
+                                        <img href="img/uk_flag.png" alt="flag">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="navigation-bar__nav__language__drop lang-collapse">
+                                <a href="#">
+                                    <p>United Kingdom</p>
+                                    <picture>
+                                        <source srcset="img/uk_flag.png">
+                                        <img href="img/uk_flag.png" alt="flag">
+                                    </picture>
+                                </a>
+                                <a href="#">
+                                    <p>Deutsch</p>
+                                    <picture>
+                                        <source srcset="img/de_flag.png">
+                                        <img href="img/de_flag.png" alt="flag">
+                                    </picture>
+                                </a>
+                                <a href="#">
+                                    <p>Poland</p>
+                                    <picture>
+                                        <source srcset="img/pl_flag.png">
+                                        <img href="img/pl_flag.png" alt="flag">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header__calendar" class="container-fluid mod-option">
+        <div class="container">
+            <div class="row calendar">
+                <div class="calendar__body">
+                    <form>
+                        <div class="calendar__body__point col-xl-5 col-lg-4 col-md-4 col-12">
+                            <a id="calendar-place" href="#" class="calendar__body__point__input">
+                                <img src="img/airplanemode_active_24px.svg" alt="ico">
+                                <input name="data-place" type="text" placeholder="Airport" readonly>
+                            </a>
+                        </div>
+                        <div class="calendar__body__point input-date col-xl-5 col-lg-6 col-md-8 col-12">
+                            <a id="calendar-from" href="#" class="calendar__body__point__input-date">
+                                <img src="img/today_24px.svg" alt="ico">
+                                <span>From</span>
+                                <input name="data-from" type="text" placeholder="15 Dec 2018" readonly>
+                            </a>
+                            <a id="calendar-until" href="#" class="calendar__body__point__input-date">
+                                <img src="img/event_24px.svg" alt="ico">
+                                <span>Until</span>
+                                <input name="data-until" type="text" placeholder="15 Dec 2018" readonly>
+                            </a>
+                        </div>
+                        <div class="calendar__body__point button-block col-lg-2 col-12">
+                            <button id="calendar-submit" type="submit">
+                                <p>Book Now</p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div id="contact" class="container">
+        <div class="row contact">
+            <div class="col-12">
+                <p class="contact__title">Impressum/Kontakt</p>
+            </div>
+            <div class="contact__info col-md-4 col-12">
+                <p class="contact__info__title">McParking® Germany GmbH</p>
+                <p class="contact__info__par">Kurt-Schumacher-Damm 176 <br>13405 Berlin</p>
+                <a href="tel:+4903039837706">Tel.: +49 (0) 30 398 377 06</a>
+                <a href="#">Fax: +49 (0) 30 398 377 08</a>
+                <a href="mailto:info@parking.de">Email: <u>info@mcparking.de</u></a>
+            </div>
+            <div class="contact__info col-md-8 col-12">
+                <p class="contact__info__title">Finanzamt: Berlin Charlottenburg</p>
+                <p class="contact__info__par">UST.-Ident-Nr. DE315456112</p>
+                <p class="contact__info__par">Amtsgericht Charlottenburg</p>
+                <p class="contact__info__par">Inhaltlich Verantwortlicher (gemäß § 10 Absatz 3 MDStV):</p>
+                <p class="contact__info__par">Geschäftsleitung: Michael Hartwig & Till Bunse</p>
+            </div>
+        </div>
+    </div>
+    <div id="offices" class="container">
+        <div class="row contact">
+            <div class="col-12">
+                <p class="contact__title">Niederlassungen</p>
+            </div>
+            <div class="contact__info col-md-4 col-sm-6 col-12">
+                <p class="contact__info__title">McParking Leipzig</p>
+                <p class="contact__info__par">Kohlmeisenweg 3
+                    04435 Schkeuditz</p>
+                <a href="">+49 (0) 3420791478</a>
+            </div>
+            <div class="contact__info col-md-4 col-sm-6 col-12">
+                <p class="contact__info__title">McParking Schönefeld</p>
+                <p class="contact__info__par">Gebrüder-Hirth-Straße 27
+                    12526 Berlin</p>
+                <a href="">+49 (0) 3054807450</a>
+            </div>
+            <div class="contact__info col-md-4 col-sm-6 col-12">
+                <p class="contact__info__title">McParking Königs Wusterhausen</p>
+                <p class="contact__info__par">Halskestraße 1
+                    15711 Königs Wusterhausen</p>
+                <a href="">+49 (0) 33755261990</a>
+            </div>
+            <div class="contact__info col-md-4 col-sm-6 col-12">
+                <p class="contact__info__title">McParking Tegel P2 </p>
+                <p class="contact__info__par">Küsterstr. 46
+                    13599 Berlin</p>
+                <a href="">+49 (0) 1715354542</a>
+            </div>
+            <div class="contact__info col-md-4 col-sm-6 col-12">
+                <p class="contact__info__title">McParking Tegel</p>
+                <p class="contact__info__par">Kurt-Schumacher-Damm 176
+                    13405 Berlin</p>
+                <a href="">+49 (0) 3040999099</a>
+            </div>
+        </div>
+    </div>
+    <div id="resolution" class="container">
+        <div class="row resolution col-12">
+            <p class="resolution__par">Here you can find our terms and <a href="#">conditions</a> and <a href="#">privacy policy.</a></p>
+            <p class="resolution__title">Hinweis zur EU-Streitschlichtungsplattform:</p>
+            <p class="resolution__par">Die EU-Kommission stellt eine Plattform für außergerichtliche Streitschlichtung bereit. Verbrauchern gibt dies die Möglichkeit, Streitigkeiten im Zusammenhang mit Ihrer Online-Bestellung zunächst ohne die Einschaltung eines Gerichts zu klären. Die Streitbeilegungs-Plattform ist unter dem externen Link ec.europa.eu/consumers/odr/ erreichbar. Die Teilnahme ist nicht gesetzlich vorgeschrieben, sondern freiwillig. Die für den Kunden zuständige Verbraucherschlichtungsstelle ist die Allgemeine Verbraucherschlichtungsstelle des Zentrums für Schlichtung e. V., Straßburger Str. 8, 77694 Kehl Internet: www.verbraucher-schlichter.de Email: mail@verbraucher-schlichter.de Wir nehmen jedoch an einem Streitbeilegungsverfahren vor dieser Verbraucherschlichtungsstelle nicht teil.</p>
+        </div>
+    </div>
+</main>
+    <footer>
+        <div id="subscribe" class="container-fluid">
+            <div class="container">
+                <div class="row footer__subscribe">
+                    <div class="footer__subscribe__block col-md-6 col-12">
+                        <p class="footer__subscribe__title">Subscribe to our news</p>
+                        <p class="footer__subscribe__sub-title">Be aware of latest updates, promotions and prices.</p>
+                    </div>
+                    <div class="footer__subscribe__block col-md-6 col-12">
+                        <form class="footer__subscribe__input">
+                            <input class="footer__subscribe__input__text" type="text" placeholder="Your email address">
+                            <input class="footer__subscribe__input__submit" type="submit" value="SUBSCRIBE">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="container-fluid">
+            <div class="container">
+                <div class="row footer__info">
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="footer__info__about">
+                            <div class="footer__info__about__logo">
+                                <a href="index.html">
+                                    <picture>
+                                        <img src="img/McParking.svg" alt="logo">
+                                    </picture>
+                                </a>
+                            </div>
+                            <p>© 2004 - 2018 McParking® - Eingetragene Marke - alle Rechte vorbehalten</p>
+                            <p>Obwohl wir uns um die Aktualität, Vollständigkeit und Richtigkeit der Inhalte unserer Seiten bemühen, können wir hierfür keine Garantie übernehmen. Alle Preisangaben inkl. 19% gesetzlicher Mehrwertsteuer.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="footer__info__property">
+                            <div class="footer__info__property__block">
+                                <p class="footer__info__property__block__title">Our parking facilities</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">Parken Flughafen Berlin Tegel</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Parken Flughafen Schönefeld</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Parken Flughafen Leipzig</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Parken weitere Flughäfen</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__info__property__block">
+                                <p class="footer__info__property__block__title">Unser Unternehmen</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">Standorte</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Über uns</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Partner</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Impressum / Kontakt</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tracking</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                        <div class="footer__info__information">
+                            <p class="footer__info__information__title">Information</p>
+                            <ul>
+                                <li>
+                                    <a href="#">Buchen</a>
+                                </li>
+                                <li>
+                                    <a href="#">AGB's</a>
+                                </li>
+                                <li>
+                                    <a href="#">Datenschutz</a>
+                                </li>
+                                <li>
+                                    <a href="#">Firmenkunden</a>
+                                </li>
+                                <li>
+                                    <a href="#">Reisebüros</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Leistungen</a>
+                                </li>
+                                <li>
+                                    <a href="#">Newsletter Lottery Teilnahmebedingungen</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-12">
+                        <div class="footer__info__social">
+                            <p class="footer__info__social__title">Follow us</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/ic_facebook.svg" alt="social">
+                                        <span>Facebook</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/ic_twitter.svg" alt="social">
+                                        <span>Twitter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/ic_linkedin.svg" alt="social">
+                                        <span>Linked In</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/ic_google-plus.svg" alt="social">
+                                        <span>Google+</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="footer__info__social__label">
+                                <picture>
+                                    <img src="img/img_partner_buf.png" alt="logo">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

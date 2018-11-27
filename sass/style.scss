@@ -1274,4 +1274,93 @@ header{
     }
   }
 }
+.contact{
+  @include raleway(400,normal);
+  color: black;
+  font-size: 14px;
+  font-variant-numeric: normal;
+  margin-bottom: 70px;
+  &__title{
+    font-size: 48px;
+    line-height: 47px;
+    color: $c-blue;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  &__info{
+    text-align: left;
+    &__title{
+      font-size: 24px;
+      line-height: 29px;
+      color: $c-blue;
+      font-weight: 600;
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+    &__par{
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+      color: rgba(0,0,0,0.87);
+      margin-bottom: 5px;
+    }
+    a{
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+      color: rgba(0,0,0,0.87);
+      margin-bottom: 5px;
+      display: block;
+      &:hover{
+        color: rgba(0,0,0,0.6);
+        u{
+          color: $c-blue;
+        }
+      }
+      u{
+        color: $c-blue-li;
+      }
+    }
+  }
+}
+.offices{
+  @include raleway(400,normal);
+  color: black;
+  font-size: 14px;
+  font-variant-numeric: normal;
+  margin-bottom: 70px;
+}
+.resolution{
+  @include raleway(400,normal);
+  color: black;
+  font-size: 14px;
+  font-variant-numeric: normal;
+  margin-bottom: 70px;
+  &__title{
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    color: $c-blue;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  &__par{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+    color: rgba(0,0,0,0.87);
+    width: 100%;
+    a{
+      display: inline-block;
+      color: $c-blue-ic;
+      &:hover{
+        color: $c-blue;
+      }
+    }
+  }
+}
 @import "media";
