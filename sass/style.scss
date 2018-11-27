@@ -17,6 +17,29 @@ body{
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  &__collapse{
+    display: none;
+    width: 34px;
+    height: 28px;
+    padding: 0;
+    position: relative;
+    a{
+      width: 30px;
+      display: flex;
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: auto;
+    }
+    div{
+      width: 100%;
+      height: 4px;
+      background-color: $c-yellow;
+    }
+  }
   &__logo{
     padding: 0;
     position: relative;
@@ -45,6 +68,7 @@ body{
       color: white;
       font-size: 16px;
       line-height: 19px;
+      white-space: nowrap;
       &:hover{
         opacity: 0.8;
       }

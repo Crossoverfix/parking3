@@ -1,12 +1,455 @@
 @media screen and (max-width: 1199px){
-
+  .navigation-bar__info{
+    text-align: center;
+  }
+  .navigation-bar__info span{
+    margin-right: 0;
+  }
+  .calendar{
+    height: 500px;
+    padding-bottom: 40px;
+  }
+  .how-works__body__card__wrapp__ico{
+    height: 120px;
+    padding: 15px 0;
+  }
+  .how-works__body__card__wrapp__text{
+    padding: 15px 20px;
+  }
+  .first-look__card__img{
+    padding: 15px 0;
+    height: 120px;
+  }
+  .first-look__card__text{
+    padding: 20px 35px 20px 35px;
+  }
+  .reservation__block__wrap__title{
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  .reservation__block__wrap__sub-title{
+    font-size: 38px;
+  }
+  .reservation__block__wrap__par{
+    font-size: 18px;
+  }
+  .reservation__block__wrap{
+    padding: 35px 30px;
+  }
+  .footer__subscribe__title{
+    font-size: 42px;
+  }
 }
 @media screen and (max-width: 991px){
-
+  .navigation-bar__info{
+    text-align: right;
+  }
+  .navigation-bar__info span{
+    margin-right: 10px;
+  }
+  .navigation-bar__nav nav{
+    justify-content: space-between;
+  }
+  .navigation-bar__nav ul li{
+    margin-left: 0;
+    margin-right: 25px;
+  }
+  .navigation-bar__nav{
+    padding-left: 0;
+  }
+  .calendar__title{
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .calendar__body__point{
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .calendar__body form{
+    flex-wrap: wrap;
+  }
+  .calendar__body__point.button-block{
+    align-items: center;
+    margin-top: 10px;
+  }
+  .calendar__body__point button{
+    height: auto;
+    padding: 12px 18px 8px 18px;
+    width: auto;
+    margin: 0 auto;
+  }
+  .how-works__sub-title{
+    margin-bottom: 30px;
+  }
+  .how-works__body__card{
+    margin-bottom: 30px;
+  }
+  .how-works__body__card__wrapp{
+    min-height: 200px;
+  }
+  .how-works__body__card__wrapp__ico {
+    height: 100px;
+    padding: 5px 0;
+  }
+  .how-works__body__card__wrapp__text .how-works__body__card__wrapp__text__title{
+    margin-bottom: 5px;
+  }
+  .how-works__title{
+    font-size: 42px;
+    line-height: 52px;
+    margin-bottom: 15px;
+  }
+  .how-works{
+    margin-bottom: 40px;
+  }
+  .parking-about__text h2{
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 25px;
+  }
+  .parking-about__text p{
+    margin-bottom: 15px;
+  }
+  .parking-about{
+    margin-bottom: 40px;
+  }
+  .first-look__card__img {
+    padding: 10px 0;
+    height: 90px;
+  }
+  .first-look__card__text{
+    padding: 15px;
+    font-size: 15px;
+  }
+  .first-look__card{
+    min-height: 190px;
+  }
+  .first-look__bg{
+    height: 250px;
+  }
+  #first-look{
+    margin-bottom: 60px;
+  }
+  .reservation__text h2{
+    font-size: 42px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+  .reservation__text p{
+    margin-bottom: 10px;
+  }
+  .reservation__text{
+    line-height: 22px;
+  }
+  .reservation__block__wrap{
+    padding: 15px 20px;
+  }
+  .reservation__block__wrap__title{
+    line-height: 40px;
+  }
+  .reservation__block__wrap__sub-title{
+    padding-bottom: 10px;
+  }
+  .reservation__block__wrap__par{
+    margin-bottom: 15px;
+  }
+  .partners__title{
+    font-size: 42px;
+    line-height: 48px;
+    margin-bottom: 25px;
+  }
+  .partners__body__card__wrap{
+    padding: 0 5%;
+  }
+  .partners{
+    margin-bottom: 40px;
+  }
+  #subscribe{
+    padding: 30px 0;
+  }
+  .footer__subscribe__title{
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .footer__subscribe__sub-title{
+    font-size: 14px;
+  }
+  .footer__subscribe__input{
+    width: 100%;
+  }
+  .footer__info__about__logo{
+    margin-bottom: 10px;
+  }
+  .footer__info__about p{
+    margin-bottom: 10px;
+  }
+  .footer__info__property__block__title{
+    margin-bottom: 5px;
+  }
+  .footer__info__property__block ul li{
+    margin-bottom: 0;
+  }
+  .footer__info__property__block ul{
+    margin-bottom: 0;
+  }
+  .footer__info__property__block{
+    margin-bottom: 20px;
+  }
+  .footer__info__information__title{
+    margin-bottom: 5px;
+  }
+  .footer__info__information ul{
+    margin-bottom: 0;
+  }
+  .footer__info__information ul li{
+    margin-bottom: 0;
+  }
+  .footer__info__social ul li a{
+    white-space: nowrap;
+  }
+  .footer__info__social__label{
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width: 767px){
-
+  .navigation-bar__info{
+    padding: 0;
+    justify-content: space-around;
+    display: flex;
+  }
+  .calendar__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .calendar__body{
+    height: auto;
+  }
+  .calendar__body__point{
+    padding: 10px 20px;
+  }
+  .calendar__body__point__input-date:nth-child(1):before{
+    height: 0;
+  }
+  .calendar__body__point.button-block{
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .parking-about__text h2{
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  .parking-about__text p{
+    letter-spacing: 0;
+    margin-bottom: 10px;
+  }
+  .parking-about__text{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .first-look__title{
+    font-size: 36px;
+    line-height: 48px;
+  }
+  #first-look{
+    padding-top: 25px;
+    margin-bottom: 20px;
+  }
+  .first-look__card {
+    min-height: 170px;
+    margin-bottom: 30px;
+  }
+  .first-look__bg{
+    height: 220px;
+  }
+  .partners__body{
+    flex-wrap: wrap;
+  }
+  .partners__body__card{
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  .partners__body__card__wrap{
+    padding: 0 10%;
+  }
+  .footer__subscribe__block{
+    margin-bottom: 15px;
+  }
+  .footer__info__social__label{
+    width: 50%;
+  }
 }
 @media screen and (max-width: 574px){
-
+  .navigation-bar__info{
+    display: none;
+    flex-wrap: wrap;
+  }
+  .navigation-bar__nav{
+    display: none;
+  }
+  .navigation-bar__collapse{
+    display: block;
+  }
+  .navigation-bar__info span{
+    margin: 10px 0;
+  }
+  .navigation-bar__info a{
+    margin-bottom: 10px;
+  }
+  .navigation-bar__nav nav{
+    align-items: center;
+    flex-direction: column;
+  }
+  .navigation-bar__nav ul{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .navigation-bar__nav__language{
+    margin-left: 0;
+    width: 100%;
+  }
+  .navigation-bar__nav__language:before{
+    width: 0;
+  }
+  .navigation-bar__nav__language__active a{
+    height: 22px;
+    padding-right: 36px;
+  }
+  .navigation-bar__nav__language__active{
+    text-align: center;
+  }
+  .navigation-bar__nav__language__active a:before{
+    right: 10px;
+    width: 15px;
+    height: 8px;
+    top: 8px;
+  }
+  .navigation-bar__nav__language__drop{
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .calendar__title {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .calendar{
+    height: 400px;
+  }
+  .calendar__body__point__input-date{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .calendar__body__point__input-date:before{
+    width: 95%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+  .calendar__body__point__input-date:nth-child(1):before{
+    height: 2px;
+  }
+  .calendar__footer__body__rate{
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .calendar__footer__body__link a{
+    text-align: center;
+    padding: 0 30px;
+  }
+  .calendar__footer{
+    height: 90px;
+    bottom: -90px;
+  }
+  #header__calendar{
+    margin-bottom: 110px;
+  }
+  .how-works__title{
+    font-size: 30px;
+    line-height: 44px;
+  }
+  .how-works__body__card{
+    margin-bottom: 15px;
+  }
+  .parking-about__images{
+    width: 260px;
+    margin: 0 auto;
+  }
+  .how-works{
+    margin-bottom: 20px;
+  }
+  .first-look__card{
+    min-height: auto;
+  }
+  .how-works__body__card__wrapp{
+    min-height: auto;
+  }
+  .first-look__title{
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .reservation__text h2{
+    font-size: 34px;
+    line-height: 34px;
+  }
+  .reservation__block__wrap__title{
+    font-size: 32px;
+  }
+  .reservation__block__wrap__sub-title{
+    font-size: 28px;
+    line-height: 44px;
+  }
+  .partners__title{
+    padding: 0 15px;
+    font-size: 36px;
+    line-height: 38px;
+  }
+  .partners__body__card{
+    width: 50%;
+  }
+  .footer__subscribe{
+    padding: 0 15px;
+  }
+  .footer__subscribe__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .footer__subscribe__sub-title{
+    line-height: 20px;
+  }
+  .footer__subscribe__input__text{
+    padding: 0 5px;
+  }
+  .footer__subscribe__input__submit{
+    padding: 0 5px;
+  }
+  .footer__info__about__logo{
+    text-align: center;
+  }
+  #footer{
+    padding: 30px 0;
+  }
+  .footer__info__about p{
+    text-align: center;
+  }
+  .footer__info__property__block{
+    text-align: center;
+  }
+  .footer__info__information{
+    text-align: center;
+  }
+  .footer__info__social{
+    text-align: center;
+    margin-top: 15px;
+  }
+  .footer__info__social__label {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
