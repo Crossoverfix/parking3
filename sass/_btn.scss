@@ -23,6 +23,9 @@ a,a:hover{
   outline: none;
   padding: 0 25px;
   color: $c-blue;
+  &.wide-btn{
+    padding: 0 55px;
+  }
   &:focus{
     border: none;
     outline: none;
