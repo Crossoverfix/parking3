@@ -16,7 +16,7 @@ a, a:hover {
   height: 40px;
   background-color: #FFCC00;
   border-radius: 2px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -171,9 +171,10 @@ header {
 /* line 15, ../sass/style.scss */
 #header__nav-bar {
   background-color: #023574;
+  box-shadow: 0 1px 0 0 #3892CE;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 .navigation-bar {
   padding: 16px 0;
   display: flex;
@@ -181,7 +182,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
-/* line 24, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 .navigation-bar__collapse {
   display: none;
   width: 34px;
@@ -189,7 +190,7 @@ header {
   padding: 0;
   position: relative;
 }
-/* line 30, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 .navigation-bar__collapse a {
   width: 30px;
   display: flex;
@@ -201,28 +202,28 @@ header {
   align-items: center;
   margin-left: auto;
 }
-/* line 41, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .navigation-bar__collapse div {
   width: 100%;
   height: 4px;
   background-color: #FFCC00;
 }
-/* line 47, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .navigation-bar__logo {
   padding: 0;
   position: relative;
 }
-/* line 50, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .navigation-bar__logo a {
   display: inline-block;
   width: auto;
   height: 28px;
 }
-/* line 56, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .navigation-bar__logo picture img {
   height: 100%;
 }
-/* line 62, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .navigation-bar__info span {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
@@ -234,7 +235,7 @@ header {
   opacity: 0.5;
   margin-right: 10px;
 }
-/* line 70, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 .navigation-bar__info a {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -245,22 +246,22 @@ header {
   line-height: 19px;
   white-space: nowrap;
 }
-/* line 76, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .navigation-bar__info a:hover {
   opacity: 0.8;
 }
-/* line 81, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .navigation-bar__nav {
   padding-right: 0;
 }
-/* line 83, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .navigation-bar__nav nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
 }
-/* line 89, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .navigation-bar__nav__language {
   position: relative;
   display: inline-flex;
@@ -268,11 +269,11 @@ header {
   min-height: 32px;
   margin-left: 20px;
 }
-/* line 95, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .navigation-bar__nav__language a {
   display: inline-block;
 }
-/* line 98, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .navigation-bar__nav__language:before {
   content: "";
   position: absolute;
@@ -282,7 +283,7 @@ header {
   width: 1px;
   background-color: #4E719D;
 }
-/* line 107, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .navigation-bar__nav__language__active {
   position: relative;
   width: 100%;
@@ -290,7 +291,7 @@ header {
   min-height: 32px;
   text-align: right;
 }
-/* line 113, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 .navigation-bar__nav__language__active a {
   vertical-align: middle;
   width: auto;
@@ -298,7 +299,7 @@ header {
   padding-right: 22px;
   position: relative;
 }
-/* line 119, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .navigation-bar__nav__language__active a:before {
   content: "";
   position: absolute;
@@ -309,17 +310,17 @@ header {
   right: 0;
   top: 50%;
 }
-/* line 129, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .navigation-bar__nav__language__active a picture {
   height: 100%;
 }
-/* line 132, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .navigation-bar__nav__language__active a img {
   vertical-align: baseline;
   height: 100%;
   width: auto;
 }
-/* line 139, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .navigation-bar__nav__language__drop {
   position: absolute;
   min-height: 32px;
@@ -333,11 +334,11 @@ header {
   z-index: 1;
   border-radius: 0 0 6px 6px;
 }
-/* line 151, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .navigation-bar__nav__language__drop.lang-collapse {
   display: none;
 }
-/* line 154, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .navigation-bar__nav__language__drop a {
   vertical-align: middle;
   width: auto;
@@ -347,11 +348,11 @@ header {
   padding: 0;
   white-space: nowrap;
 }
-/* line 163, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .navigation-bar__nav__language__drop a:hover p {
   opacity: 0.8;
 }
-/* line 167, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .navigation-bar__nav__language__drop a p {
   display: inline-block;
   margin-bottom: 0;
@@ -363,17 +364,17 @@ header {
   font-size: 14px;
   color: white;
 }
-/* line 175, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .navigation-bar__nav__language__drop a picture {
   height: 100%;
 }
-/* line 178, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .navigation-bar__nav__language__drop a img {
   vertical-align: baseline;
   height: 100%;
   width: auto;
 }
-/* line 186, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .navigation-bar__nav ul {
   list-style-type: none;
   padding: 0;
@@ -381,11 +382,11 @@ header {
   flex-direction: row;
   margin: 0;
 }
-/* line 192, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .navigation-bar__nav ul li {
   margin-left: 25px;
 }
-/* line 194, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 .navigation-bar__nav ul li a {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -395,30 +396,35 @@ header {
   font-size: 16px;
   line-height: 28px;
 }
-/* line 199, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .navigation-bar__nav ul li a:hover {
   opacity: 0.8;
 }
 
-/* line 207, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 #header__calendar {
   background: url("../img/img_main.jpg") no-repeat center #3892CE;
   background-size: cover;
   position: relative;
   margin-bottom: 40px;
 }
-/* line 212, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 #header__calendar.mod-option {
   background: url("") #3892CE;
   margin-bottom: -45px;
 }
-/* line 215, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 #header__calendar.mod-option .calendar {
   height: auto;
   padding: 12px 0;
 }
-
 /* line 221, ../sass/style.scss */
+#header__calendar.mod-airoport {
+  background: url("../img/img_airport_tegel.jpg") no-repeat center #3892CE;
+  background-size: cover;
+}
+
+/* line 226, ../sass/style.scss */
 .calendar {
   height: 656px;
   display: flex;
@@ -427,7 +433,7 @@ header {
   position: relative;
   padding-bottom: 80px;
 }
-/* line 228, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .calendar__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -438,7 +444,7 @@ header {
   line-height: 71px;
   margin-bottom: 30px;
 }
-/* line 235, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 .calendar__body {
   width: 100%;
   height: 48px;
@@ -447,7 +453,7 @@ header {
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 242, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 .calendar__body form {
   display: flex;
   flex-direction: row;
@@ -456,14 +462,14 @@ header {
   position: relative;
   padding: 0;
 }
-/* line 250, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .calendar__body__point {
   height: 100%;
   position: relative;
   display: flex;
   flex-direction: row;
 }
-/* line 255, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 .calendar__body__point input::-moz-placeholder {
   color: #023574;
   font-weight: 600;
@@ -471,7 +477,7 @@ header {
   font-size: 16px;
   opacity: 0.8;
 }
-/* line 262, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 .calendar__body__point input::-webkit-input-placeholder {
   color: #023574;
   font-weight: 600;
@@ -479,7 +485,7 @@ header {
   font-size: 16px;
   opacity: 0.8;
 }
-/* line 269, ../sass/style.scss */
+/* line 274, ../sass/style.scss */
 .calendar__body__point input {
   cursor: pointer;
   border: none;
@@ -493,20 +499,20 @@ header {
   line-height: 26px;
   color: #023574;
 }
-/* line 279, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .calendar__body__point input:focus {
   border: none;
   outline: none;
 }
-/* line 284, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 .calendar__body__point.input-date {
   padding: 10px 0;
 }
-/* line 287, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .calendar__body__point.button-block {
   padding: 3px 3px 4px 3px;
 }
-/* line 290, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 .calendar__body__point__input {
   width: 100%;
   height: 100%;
@@ -515,18 +521,18 @@ header {
   position: relative;
   padding-left: 30px;
 }
-/* line 297, ../sass/style.scss */
+/* line 302, ../sass/style.scss */
 .calendar__body__point__input img {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
-/* line 303, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 .calendar__body__point__input input {
   width: 100%;
 }
-/* line 306, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .calendar__body__point__input-date {
   width: 50%;
   height: 100%;
@@ -536,7 +542,7 @@ header {
   padding-left: 50px;
   padding-right: 32px;
 }
-/* line 314, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .calendar__body__point__input-date:after {
   content: "";
   position: absolute;
@@ -548,7 +554,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 325, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 .calendar__body__point__input-date:before {
   content: "";
   position: absolute;
@@ -558,14 +564,14 @@ header {
   width: 2px;
   background-color: #D8D8D8;
 }
-/* line 334, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 .calendar__body__point__input-date img {
   position: absolute;
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
 }
-/* line 340, ../sass/style.scss */
+/* line 345, ../sass/style.scss */
 .calendar__body__point__input-date span {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -578,19 +584,19 @@ header {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 349, ../sass/style.scss */
+/* line 354, ../sass/style.scss */
 .calendar__body__point__input-date input {
   width: auto;
   max-width: 60%;
 }
-/* line 355, ../sass/style.scss */
+/* line 360, ../sass/style.scss */
 .calendar__body__point button {
   width: 100%;
   height: 100%;
   background-color: #FFCC00;
   border: none;
   outline: none;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   border-radius: 2px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
@@ -604,27 +610,27 @@ header {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 371, ../sass/style.scss */
+/* line 376, ../sass/style.scss */
 .calendar__body__point button p {
   margin-bottom: 0;
 }
-/* line 374, ../sass/style.scss */
+/* line 379, ../sass/style.scss */
 .calendar__body__point button:focus {
   border: none;
   outline: none;
 }
-/* line 378, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 .calendar__body__point button:hover {
   background-color: #e8b900;
 }
-/* line 384, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 .calendar__info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 35px;
 }
-/* line 389, ../sass/style.scss */
+/* line 394, ../sass/style.scss */
 .calendar__info__wrap {
   flex-grow: 0;
   display: flex;
@@ -636,13 +642,13 @@ header {
   background-color: rgba(2, 53, 116, 0.5);
   align-items: center;
 }
-/* line 400, ../sass/style.scss */
+/* line 405, ../sass/style.scss */
 .calendar__info ul {
   margin-top: 5px;
   margin-bottom: 5px;
   padding-left: 20px;
 }
-/* line 404, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
 .calendar__info ul li {
   padding-left: 15px;
   font-family: "Raleway", sans-serif;
@@ -654,7 +660,7 @@ header {
   line-height: 24px;
   margin-bottom: 3px;
 }
-/* line 413, ../sass/style.scss */
+/* line 418, ../sass/style.scss */
 .calendar__info p {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -664,12 +670,11 @@ header {
   font-size: 18px;
   margin-top: 5px;
   margin-bottom: 5px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   letter-spacing: -0.5px;
   font-variant-numeric: normal;
   margin-left: 60px;
 }
-/* line 423, ../sass/style.scss */
+/* line 428, ../sass/style.scss */
 .calendar__info p u {
   margin-left: 2px;
   font-weight: 600;
@@ -677,7 +682,7 @@ header {
   text-decoration: none;
   line-height: 71px;
 }
-/* line 432, ../sass/style.scss */
+/* line 437, ../sass/style.scss */
 .calendar__footer {
   position: absolute;
   bottom: -40px;
@@ -686,7 +691,7 @@ header {
   width: 100%;
   background-color: #F8F8F8;
 }
-/* line 439, ../sass/style.scss */
+/* line 444, ../sass/style.scss */
 .calendar__footer__body {
   height: 40px;
   display: flex;
@@ -694,36 +699,36 @@ header {
   justify-content: center;
   align-items: center;
 }
-/* line 445, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 .calendar__footer__body__rate {
   margin-right: 15px;
 }
-/* line 447, ../sass/style.scss */
+/* line 452, ../sass/style.scss */
 .calendar__footer__body__rate a {
   width: 100%;
   height: 100%;
   display: inline-block;
 }
-/* line 452, ../sass/style.scss */
+/* line 457, ../sass/style.scss */
 .calendar__footer__body__rate__wrapp {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
 }
-/* line 457, ../sass/style.scss */
+/* line 462, ../sass/style.scss */
 .calendar__footer__body__rate__wrapp__star {
   width: 23px;
   height: 23px;
   margin-right: 3px;
   position: relative;
 }
-/* line 462, ../sass/style.scss */
+/* line 467, ../sass/style.scss */
 .calendar__footer__body__rate__wrapp__star img {
   height: 100%;
   width: auto;
 }
-/* line 470, ../sass/style.scss */
+/* line 475, ../sass/style.scss */
 .calendar__footer__body__link a {
   display: inline-block;
   font-family: "Raleway", sans-serif;
@@ -733,15 +738,14 @@ header {
   color: #023574;
   font-size: 16px;
   line-height: 19px;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   vertical-align: bottom;
 }
 
-/* line 483, ../sass/style.scss */
+/* line 488, ../sass/style.scss */
 .how-works {
   margin-bottom: 80px;
 }
-/* line 485, ../sass/style.scss */
+/* line 490, ../sass/style.scss */
 .how-works__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -753,7 +757,7 @@ header {
   width: 100%;
   margin-bottom: 25px;
 }
-/* line 493, ../sass/style.scss */
+/* line 498, ../sass/style.scss */
 .how-works__sub-title {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -765,14 +769,14 @@ header {
   letter-spacing: 0.5px;
   margin-bottom: 50px;
 }
-/* line 503, ../sass/style.scss */
+/* line 508, ../sass/style.scss */
 .how-works__body__card__wrapp {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
   height: 100%;
   background-color: white;
 }
-/* line 508, ../sass/style.scss */
+/* line 513, ../sass/style.scss */
 .how-works__body__card__wrapp__ico {
   height: 140px;
   width: 100%;
@@ -780,7 +784,7 @@ header {
   padding: 32px 0;
   text-align: center;
 }
-/* line 514, ../sass/style.scss */
+/* line 519, ../sass/style.scss */
 .how-works__body__card__wrapp__ico:before {
   content: "";
   position: absolute;
@@ -791,17 +795,17 @@ header {
   transform: translateX(-50%);
   background-color: #FFCC00;
 }
-/* line 524, ../sass/style.scss */
+/* line 529, ../sass/style.scss */
 .how-works__body__card__wrapp__ico img {
   height: 100%;
   text-align: center;
 }
-/* line 529, ../sass/style.scss */
+/* line 534, ../sass/style.scss */
 .how-works__body__card__wrapp__text {
   width: 100%;
   padding: 20px 30px;
 }
-/* line 532, ../sass/style.scss */
+/* line 537, ../sass/style.scss */
 .how-works__body__card__wrapp__text p {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -813,7 +817,7 @@ header {
   text-align: center;
   margin-bottom: 0;
 }
-/* line 540, ../sass/style.scss */
+/* line 545, ../sass/style.scss */
 .how-works__body__card__wrapp__text .how-works__body__card__wrapp__text__title {
   color: #023574;
   font-size: 24px;
@@ -822,22 +826,22 @@ header {
   margin-bottom: 15px;
 }
 
-/* line 552, ../sass/style.scss */
+/* line 557, ../sass/style.scss */
 .parking-about {
   margin-bottom: 80px;
 }
-/* line 554, ../sass/style.scss */
+/* line 559, ../sass/style.scss */
 .parking-about__images {
   position: relative;
   width: 100%;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 558, ../sass/style.scss */
+/* line 563, ../sass/style.scss */
 .parking-about__images img {
   width: 100%;
   height: auto;
 }
-/* line 563, ../sass/style.scss */
+/* line 568, ../sass/style.scss */
 .parking-about__text {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -847,7 +851,7 @@ header {
   font-size: 16px;
   line-height: 18px;
 }
-/* line 568, ../sass/style.scss */
+/* line 573, ../sass/style.scss */
 .parking-about__text h2 {
   color: #023574;
   font-size: 48px;
@@ -855,18 +859,20 @@ header {
   font-weight: 600;
   margin-bottom: 35px;
 }
-/* line 575, ../sass/style.scss */
+/* line 580, ../sass/style.scss */
 .parking-about__text p {
   letter-spacing: 0.5px;
   margin-bottom: 25px;
+  line-height: 28px;
+  color: black;
 }
-/* line 579, ../sass/style.scss */
+/* line 586, ../sass/style.scss */
 .parking-about__text ul {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 30px;
 }
-/* line 583, ../sass/style.scss */
+/* line 590, ../sass/style.scss */
 .parking-about__text ul li {
   font-weight: 500;
   padding-left: 35px;
@@ -876,7 +882,7 @@ header {
   margin-bottom: 15px;
   position: relative;
 }
-/* line 591, ../sass/style.scss */
+/* line 598, ../sass/style.scss */
 .parking-about__text ul li:before {
   content: "";
   position: absolute;
@@ -886,13 +892,13 @@ header {
   height: 16px;
   background-color: #FFCC00;
 }
-/* line 602, ../sass/style.scss */
+/* line 609, ../sass/style.scss */
 .parking-about__text ol {
   padding-left: 0;
   list-style-type: none;
   counter-reset: num;
 }
-/* line 606, ../sass/style.scss */
+/* line 613, ../sass/style.scss */
 .parking-about__text ol li {
   padding-left: 40px;
   position: relative;
@@ -906,7 +912,7 @@ header {
   letter-spacing: 0.5px;
   color: rgba(0, 0, 0, 0.87);
 }
-/* line 615, ../sass/style.scss */
+/* line 622, ../sass/style.scss */
 .parking-about__text ol li:before {
   content: counter(num) ".";
   counter-increment: num;
@@ -923,29 +929,29 @@ header {
   color: rgba(0, 0, 0, 0.87);
 }
 
-/* line 631, ../sass/style.scss */
+/* line 638, ../sass/style.scss */
 #first-look {
   position: relative;
   padding-top: 45px;
   margin-bottom: 80px;
 }
 
-/* line 637, ../sass/style.scss */
+/* line 644, ../sass/style.scss */
 .first-look.mod-option {
   padding-bottom: 55px;
 }
-/* line 640, ../sass/style.scss */
+/* line 647, ../sass/style.scss */
 .first-look.mod-option .first-look__card__img {
   height: auto;
   padding: 40px 35px 10px 35px;
   text-align: left;
 }
-/* line 644, ../sass/style.scss */
+/* line 651, ../sass/style.scss */
 .first-look.mod-option .first-look__card__img:before {
   transform: translateX(0);
   left: 35px;
 }
-/* line 651, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 .first-look__bg {
   width: 100%;
   background-color: #FFCC00;
@@ -955,13 +961,13 @@ header {
   height: 300px;
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 16px 0 rgba(0, 0, 0, 0.1);
 }
-/* line 659, ../sass/style.scss */
+/* line 666, ../sass/style.scss */
 .first-look__bg.mod-option {
   top: auto;
   bottom: 0;
   height: 65%;
 }
-/* line 665, ../sass/style.scss */
+/* line 672, ../sass/style.scss */
 .first-look__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -973,7 +979,13 @@ header {
   margin-bottom: 25px;
   position: relative;
 }
-/* line 673, ../sass/style.scss */
+/* line 679, ../sass/style.scss */
+.first-look__title u {
+  font-size: 14px;
+  text-decoration: none;
+  vertical-align: top;
+}
+/* line 685, ../sass/style.scss */
 .first-look__sub-title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -985,7 +997,7 @@ header {
   margin-bottom: 10px;
   position: relative;
 }
-/* line 681, ../sass/style.scss */
+/* line 693, ../sass/style.scss */
 .first-look__par {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -997,7 +1009,7 @@ header {
   margin-bottom: 30px;
   position: relative;
 }
-/* line 689, ../sass/style.scss */
+/* line 701, ../sass/style.scss */
 .first-look__card {
   width: 100%;
   position: relative;
@@ -1005,7 +1017,7 @@ header {
   background-color: white;
   height: 100%;
 }
-/* line 695, ../sass/style.scss */
+/* line 707, ../sass/style.scss */
 .first-look__card__img {
   width: 100%;
   padding: 30px 0 25px 0;
@@ -1013,7 +1025,7 @@ header {
   height: 140px;
   position: relative;
 }
-/* line 701, ../sass/style.scss */
+/* line 713, ../sass/style.scss */
 .first-look__card__img:before {
   content: "";
   position: absolute;
@@ -1024,11 +1036,11 @@ header {
   transform: translateX(-50%);
   background-color: #FFCC00;
 }
-/* line 711, ../sass/style.scss */
+/* line 723, ../sass/style.scss */
 .first-look__card__img img {
   height: 100%;
 }
-/* line 714, ../sass/style.scss */
+/* line 726, ../sass/style.scss */
 .first-look__card__img__text {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1038,7 +1050,7 @@ header {
   color: #023574;
   line-height: 29px;
 }
-/* line 721, ../sass/style.scss */
+/* line 733, ../sass/style.scss */
 .first-look__card__text {
   padding: 10px 35px 20px 35px;
   font-family: "Raleway", sans-serif;
@@ -1049,14 +1061,13 @@ header {
   font-size: 16px;
   line-height: 16px;
 }
-/* line 727, ../sass/style.scss */
+/* line 739, ../sass/style.scss */
 .first-look__card__text__title {
   font-weight: 600;
   color: #023574;
   text-align: center;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
-/* line 733, ../sass/style.scss */
+/* line 745, ../sass/style.scss */
 .first-look__card__text__par {
   font-weight: 500;
   line-height: 28px;
@@ -1064,12 +1075,12 @@ header {
   color: rgba(0, 0, 0, 0.87);
 }
 
-/* line 742, ../sass/style.scss */
+/* line 754, ../sass/style.scss */
 .reservation {
   margin-bottom: 45px;
   align-items: stretch;
 }
-/* line 745, ../sass/style.scss */
+/* line 757, ../sass/style.scss */
 .reservation__text {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -1079,21 +1090,21 @@ header {
   font-size: 16px;
   line-height: 28px;
 }
-/* line 750, ../sass/style.scss */
+/* line 762, ../sass/style.scss */
 .reservation__text h2 {
   color: #023574;
   font-size: 48px;
   line-height: 57px;
   margin-bottom: 25px;
 }
-/* line 756, ../sass/style.scss */
+/* line 768, ../sass/style.scss */
 .reservation__text p {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.87);
   margin-bottom: 20px;
   letter-spacing: 0.5px;
 }
-/* line 764, ../sass/style.scss */
+/* line 776, ../sass/style.scss */
 .reservation__block__wrap {
   height: 100%;
   background-color: #023574;
@@ -1107,7 +1118,7 @@ header {
   line-height: 21px;
   color: white;
 }
-/* line 773, ../sass/style.scss */
+/* line 785, ../sass/style.scss */
 .reservation__block__wrap__title {
   font-weight: 600;
   font-size: 48px;
@@ -1115,7 +1126,7 @@ header {
   color: #FFCC00;
   margin-bottom: 15px;
 }
-/* line 780, ../sass/style.scss */
+/* line 792, ../sass/style.scss */
 .reservation__block__wrap__sub-title {
   font-weight: 600;
   font-size: 48px;
@@ -1125,7 +1136,7 @@ header {
   padding-bottom: 30px;
   position: relative;
 }
-/* line 788, ../sass/style.scss */
+/* line 800, ../sass/style.scss */
 .reservation__block__wrap__sub-title:before {
   content: "";
   position: absolute;
@@ -1136,7 +1147,7 @@ header {
   width: 64px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 799, ../sass/style.scss */
+/* line 811, ../sass/style.scss */
 .reservation__block__wrap__par {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.7);
@@ -1146,11 +1157,11 @@ header {
   margin-bottom: 35px;
 }
 
-/* line 810, ../sass/style.scss */
+/* line 822, ../sass/style.scss */
 .partners {
   margin-bottom: 80px;
 }
-/* line 812, ../sass/style.scss */
+/* line 824, ../sass/style.scss */
 .partners__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1162,48 +1173,48 @@ header {
   margin-bottom: 45px;
   width: 100%;
 }
-/* line 820, ../sass/style.scss */
+/* line 832, ../sass/style.scss */
 .partners__body {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 825, ../sass/style.scss */
+/* line 837, ../sass/style.scss */
 .partners__body__card {
   width: 20%;
   cursor: pointer;
   display: inline-block;
 }
-/* line 829, ../sass/style.scss */
+/* line 841, ../sass/style.scss */
 .partners__body__card__wrap {
   width: 100%;
   position: relative;
   padding: 0 10%;
 }
-/* line 834, ../sass/style.scss */
+/* line 846, ../sass/style.scss */
 .partners__body__card img {
   width: 100%;
   height: auto;
 }
 
-/* line 841, ../sass/style.scss */
+/* line 853, ../sass/style.scss */
 #subscribe {
   background-color: #3892CE;
   padding: 50px 0;
 }
 
-/* line 846, ../sass/style.scss */
+/* line 858, ../sass/style.scss */
 .footer__subscribe {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-/* line 850, ../sass/style.scss */
+/* line 862, ../sass/style.scss */
 .footer__subscribe__block {
   padding: 0;
 }
-/* line 853, ../sass/style.scss */
+/* line 865, ../sass/style.scss */
 .footer__subscribe__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1214,7 +1225,7 @@ header {
   color: white;
   margin-bottom: 0;
 }
-/* line 860, ../sass/style.scss */
+/* line 872, ../sass/style.scss */
 .footer__subscribe__sub-title {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -1225,7 +1236,7 @@ header {
   color: white;
   margin-bottom: 0;
 }
-/* line 867, ../sass/style.scss */
+/* line 879, ../sass/style.scss */
 .footer__subscribe__input {
   width: 90%;
   margin: 0 0 0 auto;
@@ -1239,7 +1250,7 @@ header {
   display: flex;
   flex-direction: row;
 }
-/* line 879, ../sass/style.scss */
+/* line 891, ../sass/style.scss */
 .footer__subscribe__input input.footer__subscribe__input__text::-moz-placeholder {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -1249,7 +1260,7 @@ header {
   line-height: 22px;
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 885, ../sass/style.scss */
+/* line 897, ../sass/style.scss */
 .footer__subscribe__input input.footer__subscribe__input__text::-webkit-input-placeholder {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -1259,7 +1270,7 @@ header {
   line-height: 22px;
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 891, ../sass/style.scss */
+/* line 903, ../sass/style.scss */
 .footer__subscribe__input__text {
   flex-grow: 1;
   font-family: "Raleway", sans-serif;
@@ -1273,12 +1284,12 @@ header {
   border: none;
   outline: none;
 }
-/* line 900, ../sass/style.scss */
+/* line 912, ../sass/style.scss */
 .footer__subscribe__input__text:focus {
   border: none;
   outline: none;
 }
-/* line 905, ../sass/style.scss */
+/* line 917, ../sass/style.scss */
 .footer__subscribe__input__submit {
   border-radius: 2px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
@@ -1298,38 +1309,38 @@ header {
   outline: none;
   cursor: pointer;
 }
-/* line 920, ../sass/style.scss */
+/* line 932, ../sass/style.scss */
 .footer__subscribe__input__submit:focus {
   border: none;
   outline: none;
 }
-/* line 924, ../sass/style.scss */
+/* line 936, ../sass/style.scss */
 .footer__subscribe__input__submit:hover {
   background-color: #e8b900;
 }
-/* line 930, ../sass/style.scss */
+/* line 942, ../sass/style.scss */
 .footer__info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 935, ../sass/style.scss */
+/* line 947, ../sass/style.scss */
 .footer__info__about__logo {
   position: relative;
   height: 28px;
   margin-bottom: 30px;
 }
-/* line 939, ../sass/style.scss */
+/* line 951, ../sass/style.scss */
 .footer__info__about__logo a {
   display: inline-block;
   position: relative;
   height: 100%;
 }
-/* line 943, ../sass/style.scss */
+/* line 955, ../sass/style.scss */
 .footer__info__about__logo a img {
   height: 100%;
 }
-/* line 948, ../sass/style.scss */
+/* line 960, ../sass/style.scss */
 .footer__info__about p {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -1341,11 +1352,11 @@ header {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 30px;
 }
-/* line 958, ../sass/style.scss */
+/* line 970, ../sass/style.scss */
 .footer__info__property__block {
   margin-bottom: 30px;
 }
-/* line 960, ../sass/style.scss */
+/* line 972, ../sass/style.scss */
 .footer__info__property__block__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1357,16 +1368,16 @@ header {
   letter-spacing: 0.15px;
   margin-bottom: 15px;
 }
-/* line 968, ../sass/style.scss */
+/* line 980, ../sass/style.scss */
 .footer__info__property__block ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 971, ../sass/style.scss */
+/* line 983, ../sass/style.scss */
 .footer__info__property__block ul li {
   margin-bottom: 5px;
 }
-/* line 973, ../sass/style.scss */
+/* line 985, ../sass/style.scss */
 .footer__info__property__block ul li a {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -1378,11 +1389,11 @@ header {
   letter-spacing: 0.1px;
   margin-bottom: 15px;
 }
-/* line 980, ../sass/style.scss */
+/* line 992, ../sass/style.scss */
 .footer__info__property__block ul li a:hover {
   color: rgba(255, 255, 255, 0.4);
 }
-/* line 989, ../sass/style.scss */
+/* line 1001, ../sass/style.scss */
 .footer__info__information__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1394,16 +1405,16 @@ header {
   letter-spacing: 0.15px;
   margin-bottom: 15px;
 }
-/* line 997, ../sass/style.scss */
+/* line 1009, ../sass/style.scss */
 .footer__info__information ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 1000, ../sass/style.scss */
+/* line 1012, ../sass/style.scss */
 .footer__info__information ul li {
   margin-bottom: 5px;
 }
-/* line 1002, ../sass/style.scss */
+/* line 1014, ../sass/style.scss */
 .footer__info__information ul li a {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -1415,11 +1426,11 @@ header {
   letter-spacing: 0.1px;
   margin-bottom: 15px;
 }
-/* line 1009, ../sass/style.scss */
+/* line 1021, ../sass/style.scss */
 .footer__info__information ul li a:hover {
   color: rgba(255, 255, 255, 0.4);
 }
-/* line 1017, ../sass/style.scss */
+/* line 1029, ../sass/style.scss */
 .footer__info__social__title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1431,16 +1442,16 @@ header {
   letter-spacing: 0.15px;
   margin-bottom: 15px;
 }
-/* line 1025, ../sass/style.scss */
+/* line 1037, ../sass/style.scss */
 .footer__info__social ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 1028, ../sass/style.scss */
+/* line 1040, ../sass/style.scss */
 .footer__info__social ul li {
   margin-bottom: 5px;
 }
-/* line 1030, ../sass/style.scss */
+/* line 1042, ../sass/style.scss */
 .footer__info__social ul li a {
   display: inline-block;
   height: 24px;
@@ -1455,33 +1466,33 @@ header {
   letter-spacing: 0.1px;
   margin-bottom: 15px;
 }
-/* line 1040, ../sass/style.scss */
+/* line 1052, ../sass/style.scss */
 .footer__info__social ul li a img {
   margin-right: 5px;
 }
-/* line 1043, ../sass/style.scss */
+/* line 1055, ../sass/style.scss */
 .footer__info__social ul li a:hover {
   color: rgba(255, 255, 255, 0.4);
 }
-/* line 1049, ../sass/style.scss */
+/* line 1061, ../sass/style.scss */
 .footer__info__social__label {
   margin-top: 60px;
   width: 80%;
   position: relative;
 }
-/* line 1053, ../sass/style.scss */
+/* line 1065, ../sass/style.scss */
 .footer__info__social__label img {
   width: 100%;
   height: auto;
 }
 
-/* line 1061, ../sass/style.scss */
+/* line 1073, ../sass/style.scss */
 #footer {
   background-color: #023574;
   padding: 50px 0;
 }
 
-/* line 1065, ../sass/style.scss */
+/* line 1077, ../sass/style.scss */
 .works-about {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -1491,7 +1502,7 @@ header {
   color: black;
   margin-bottom: 80px;
 }
-/* line 1070, ../sass/style.scss */
+/* line 1082, ../sass/style.scss */
 .works-about p.works-about__title {
   font-weight: 600;
   color: #023574;
@@ -1499,7 +1510,7 @@ header {
   font-size: 48px;
   margin-bottom: 30px;
 }
-/* line 1077, ../sass/style.scss */
+/* line 1089, ../sass/style.scss */
 .works-about p {
   color: rgba(0, 0, 0, 0.87);
   line-height: 19px;
@@ -1507,13 +1518,13 @@ header {
   margin-bottom: 20px;
   font-weight: 500;
 }
-/* line 1084, ../sass/style.scss */
+/* line 1096, ../sass/style.scss */
 .works-about ul {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 30px;
 }
-/* line 1088, ../sass/style.scss */
+/* line 1100, ../sass/style.scss */
 .works-about ul li {
   font-weight: 500;
   padding-left: 35px;
@@ -1523,7 +1534,7 @@ header {
   margin-bottom: 15px;
   position: relative;
 }
-/* line 1096, ../sass/style.scss */
+/* line 1108, ../sass/style.scss */
 .works-about ul li:before {
   content: "";
   position: absolute;
@@ -1534,7 +1545,7 @@ header {
   background-color: #FFCC00;
 }
 
-/* line 1108, ../sass/style.scss */
+/* line 1120, ../sass/style.scss */
 .parking-more {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -1545,7 +1556,7 @@ header {
   line-height: 18px;
   margin-bottom: 80px;
 }
-/* line 1114, ../sass/style.scss */
+/* line 1126, ../sass/style.scss */
 .parking-more p.parking-more__title {
   color: #023574;
   font-size: 48px;
@@ -1553,7 +1564,7 @@ header {
   font-weight: 600;
   margin-bottom: 30px;
 }
-/* line 1121, ../sass/style.scss */
+/* line 1133, ../sass/style.scss */
 .parking-more p.parking-more__sub-title {
   color: #023574;
   font-size: 24px;
@@ -1561,7 +1572,7 @@ header {
   font-weight: 600;
   margin-bottom: 10px;
 }
-/* line 1128, ../sass/style.scss */
+/* line 1140, ../sass/style.scss */
 .parking-more p {
   color: rgba(0, 0, 0, 0.87);
   line-height: 28px;
@@ -1570,14 +1581,14 @@ header {
   font-weight: 500;
 }
 
-/* line 1136, ../sass/style.scss */
+/* line 1148, ../sass/style.scss */
 #map-parking {
   background-color: grey;
   height: 355px;
   margin-bottom: 80px;
 }
 
-/* line 1141, ../sass/style.scss */
+/* line 1153, ../sass/style.scss */
 .places {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -1585,7 +1596,7 @@ header {
   font-variant-numeric: lining-nums;
   margin-bottom: 80px;
 }
-/* line 1144, ../sass/style.scss */
+/* line 1156, ../sass/style.scss */
 .places__title {
   color: #023574;
   font-weight: 600;
@@ -1593,7 +1604,7 @@ header {
   line-height: 57px;
   margin-bottom: 30px;
 }
-/* line 1152, ../sass/style.scss */
+/* line 1164, ../sass/style.scss */
 .places__body__card {
   background-color: #FFFFFF;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1602,25 +1613,25 @@ header {
   flex-direction: row;
   height: 200px;
 }
-/* line 1159, ../sass/style.scss */
+/* line 1171, ../sass/style.scss */
 .places__body__card__img {
   position: relative;
   overflow: hidden;
   height: 100%;
   width: 265px;
 }
-/* line 1164, ../sass/style.scss */
+/* line 1176, ../sass/style.scss */
 .places__body__card__img img {
   height: 100%;
 }
-/* line 1168, ../sass/style.scss */
+/* line 1180, ../sass/style.scss */
 .places__body__card__info {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   padding: 32px;
 }
-/* line 1173, ../sass/style.scss */
+/* line 1185, ../sass/style.scss */
 .places__body__card__info__title {
   font-size: 24px;
   line-height: 29px;
@@ -1628,7 +1639,7 @@ header {
   color: #023574;
   margin-bottom: 10px;
 }
-/* line 1180, ../sass/style.scss */
+/* line 1192, ../sass/style.scss */
 .places__body__card__info__address {
   color: rgba(0, 0, 0, 0.87);
   font-weight: 500;
@@ -1637,34 +1648,34 @@ header {
   letter-spacing: 0.5px;
   margin-bottom: 10px;
 }
-/* line 1188, ../sass/style.scss */
+/* line 1200, ../sass/style.scss */
 .places__body__card__info__link {
   margin-top: auto;
   display: flex;
   flex-direction: row;
 }
-/* line 1192, ../sass/style.scss */
+/* line 1204, ../sass/style.scss */
 .places__body__card__info__link a {
   display: inline-block;
   border: 1px solid #3892CE;
   border-radius: 2px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   font-weight: 600;
+  text-transform: uppercase;
   cursor: pointer;
   color: #3892CE;
   padding: 8px 20px 6px 20px;
   margin-right: 8px;
 }
-/* line 1202, ../sass/style.scss */
+/* line 1215, ../sass/style.scss */
 .places__body__card__info__link a:hover {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
 }
-/* line 1208, ../sass/style.scss */
+/* line 1221, ../sass/style.scss */
 .places__body__card__button {
   padding: 32px;
 }
 
-/* line 1214, ../sass/style.scss */
+/* line 1227, ../sass/style.scss */
 .places-more {
   margin-bottom: 80px;
   font-family: "Raleway", sans-serif;
@@ -1672,7 +1683,7 @@ header {
   font-style: normal;
   font-variant-numeric: lining-nums;
 }
-/* line 1217, ../sass/style.scss */
+/* line 1230, ../sass/style.scss */
 .places-more__title {
   color: #023574;
   font-size: 48px;
@@ -1680,36 +1691,37 @@ header {
   font-weight: 600;
   margin-bottom: 30px;
 }
-/* line 1225, ../sass/style.scss */
+/* line 1238, ../sass/style.scss */
 .places-more__body__card {
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   position: relative;
 }
-/* line 1232, ../sass/style.scss */
+/* line 1245, ../sass/style.scss */
 .places-more__body__card:nth-child(2n) .places-more__body__card__img {
   order: 1;
 }
-/* line 1235, ../sass/style.scss */
+/* line 1248, ../sass/style.scss */
 .places-more__body__card:nth-child(2n) .places-more__body__card__text {
   padding-left: 0;
   padding-right: 40px;
 }
-/* line 1241, ../sass/style.scss */
+/* line 1254, ../sass/style.scss */
 .places-more__body__card__img {
   width: 40%;
   flex-shrink: 0;
   position: relative;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 1245, ../sass/style.scss */
+/* line 1259, ../sass/style.scss */
 .places-more__body__card__img__wrap {
   overflow: hidden;
   height: 0;
   padding-top: 62%;
   position: relative;
 }
-/* line 1250, ../sass/style.scss */
+/* line 1264, ../sass/style.scss */
 .places-more__body__card__img__wrap img {
   position: absolute;
   top: 50%;
@@ -1718,14 +1730,14 @@ header {
   width: 100%;
   height: auto;
 }
-/* line 1260, ../sass/style.scss */
+/* line 1274, ../sass/style.scss */
 .places-more__body__card__text {
   display: flex;
   align-items: center;
   padding-left: 40px;
   padding-right: auto;
 }
-/* line 1265, ../sass/style.scss */
+/* line 1279, ../sass/style.scss */
 .places-more__body__card__text p {
   color: rgba(0, 0, 0, 0.87);
   font-weight: 500;
@@ -1735,7 +1747,7 @@ header {
   margin-bottom: 0;
 }
 
-/* line 1277, ../sass/style.scss */
+/* line 1291, ../sass/style.scss */
 .contact {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -1746,7 +1758,7 @@ header {
   font-variant-numeric: normal;
   margin-bottom: 70px;
 }
-/* line 1283, ../sass/style.scss */
+/* line 1297, ../sass/style.scss */
 .contact__title {
   font-size: 48px;
   line-height: 47px;
@@ -1754,11 +1766,11 @@ header {
   font-weight: 600;
   margin-bottom: 30px;
 }
-/* line 1290, ../sass/style.scss */
+/* line 1304, ../sass/style.scss */
 .contact__info {
   text-align: left;
 }
-/* line 1292, ../sass/style.scss */
+/* line 1306, ../sass/style.scss */
 .contact__info__title {
   font-size: 24px;
   line-height: 29px;
@@ -1767,7 +1779,7 @@ header {
   margin-bottom: 10px;
   margin-top: 15px;
 }
-/* line 1300, ../sass/style.scss */
+/* line 1314, ../sass/style.scss */
 .contact__info__par {
   font-size: 16px;
   line-height: 28px;
@@ -1776,7 +1788,7 @@ header {
   color: rgba(0, 0, 0, 0.87);
   margin-bottom: 5px;
 }
-/* line 1308, ../sass/style.scss */
+/* line 1322, ../sass/style.scss */
 .contact__info a {
   font-size: 16px;
   line-height: 28px;
@@ -1786,20 +1798,21 @@ header {
   margin-bottom: 5px;
   display: block;
 }
-/* line 1316, ../sass/style.scss */
+/* line 1330, ../sass/style.scss */
 .contact__info a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
-/* line 1318, ../sass/style.scss */
+/* line 1332, ../sass/style.scss */
 .contact__info a:hover u {
   color: #023574;
 }
-/* line 1322, ../sass/style.scss */
+/* line 1336, ../sass/style.scss */
 .contact__info a u {
   color: #3892CE;
+  text-decoration: none;
 }
 
-/* line 1328, ../sass/style.scss */
+/* line 1343, ../sass/style.scss */
 .offices {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -1811,7 +1824,7 @@ header {
   margin-bottom: 70px;
 }
 
-/* line 1335, ../sass/style.scss */
+/* line 1350, ../sass/style.scss */
 .resolution {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -1822,7 +1835,7 @@ header {
   font-variant-numeric: normal;
   margin-bottom: 70px;
 }
-/* line 1341, ../sass/style.scss */
+/* line 1356, ../sass/style.scss */
 .resolution__title {
   font-size: 24px;
   line-height: 29px;
@@ -1831,7 +1844,7 @@ header {
   margin-bottom: 25px;
   width: 100%;
 }
-/* line 1349, ../sass/style.scss */
+/* line 1364, ../sass/style.scss */
 .resolution__par {
   font-size: 16px;
   line-height: 28px;
@@ -1841,12 +1854,12 @@ header {
   color: rgba(0, 0, 0, 0.87);
   width: 100%;
 }
-/* line 1357, ../sass/style.scss */
+/* line 1372, ../sass/style.scss */
 .resolution__par a {
   display: inline-block;
   color: #0153B8;
 }
-/* line 1360, ../sass/style.scss */
+/* line 1375, ../sass/style.scss */
 .resolution__par a:hover {
   color: #023574;
 }
