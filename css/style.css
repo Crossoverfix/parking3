@@ -28,20 +28,21 @@ a, a:hover {
   letter-spacing: 1.25px;
   vertical-align: middle;
   border: none;
+  white-space: nowrap;
   outline: none;
   padding: 0 25px;
   color: #023574;
 }
-/* line 26, ../sass/_btn.scss */
+/* line 27, ../sass/_btn.scss */
 .yellow-btn.wide-btn {
   padding: 0 55px;
 }
-/* line 29, ../sass/_btn.scss */
+/* line 30, ../sass/_btn.scss */
 .yellow-btn:focus {
   border: none;
   outline: none;
 }
-/* line 33, ../sass/_btn.scss */
+/* line 34, ../sass/_btn.scss */
 .yellow-btn:hover {
   background-color: #e8b900;
 }
@@ -1866,121 +1867,126 @@ header {
 
 @media screen and (max-width: 1199px) {
   /* line 2, ../sass/_media.scss */
+  .yellow-btn {
+    white-space: normal;
+  }
+
+  /* line 5, ../sass/_media.scss */
   .navigation-bar__info {
     text-align: center;
   }
 
-  /* line 5, ../sass/_media.scss */
+  /* line 8, ../sass/_media.scss */
   .navigation-bar__info span {
     margin-right: 0;
   }
 
-  /* line 8, ../sass/_media.scss */
+  /* line 11, ../sass/_media.scss */
   .calendar {
     height: 500px;
     padding-bottom: 40px;
   }
 
-  /* line 12, ../sass/_media.scss */
+  /* line 15, ../sass/_media.scss */
   .how-works__body__card__wrapp__ico {
     height: 120px;
     padding: 15px 0;
   }
 
-  /* line 16, ../sass/_media.scss */
+  /* line 19, ../sass/_media.scss */
   .how-works__body__card__wrapp__text {
     padding: 15px 20px;
   }
 
-  /* line 19, ../sass/_media.scss */
+  /* line 22, ../sass/_media.scss */
   .first-look__card__img {
     padding: 15px 0;
     height: 120px;
   }
 
-  /* line 23, ../sass/_media.scss */
+  /* line 26, ../sass/_media.scss */
   .first-look__card__text {
     padding: 20px 35px 20px 35px;
   }
 
-  /* line 26, ../sass/_media.scss */
+  /* line 29, ../sass/_media.scss */
   .reservation__block__wrap__title {
     font-size: 40px;
     margin-bottom: 5px;
   }
 
-  /* line 30, ../sass/_media.scss */
+  /* line 33, ../sass/_media.scss */
   .reservation__block__wrap__sub-title {
     font-size: 38px;
   }
 
-  /* line 33, ../sass/_media.scss */
+  /* line 36, ../sass/_media.scss */
   .reservation__block__wrap__par {
     font-size: 18px;
   }
 
-  /* line 36, ../sass/_media.scss */
+  /* line 39, ../sass/_media.scss */
   .reservation__block__wrap {
     padding: 35px 30px;
   }
 
-  /* line 39, ../sass/_media.scss */
+  /* line 42, ../sass/_media.scss */
   .footer__subscribe__title {
     font-size: 42px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 44, ../sass/_media.scss */
+  /* line 47, ../sass/_media.scss */
   .navigation-bar__info {
     text-align: right;
   }
 
-  /* line 47, ../sass/_media.scss */
+  /* line 50, ../sass/_media.scss */
   .navigation-bar__info span {
     margin-right: 10px;
   }
 
-  /* line 50, ../sass/_media.scss */
+  /* line 53, ../sass/_media.scss */
   .navigation-bar__nav nav {
     justify-content: space-between;
   }
 
-  /* line 53, ../sass/_media.scss */
+  /* line 56, ../sass/_media.scss */
   .navigation-bar__nav ul li {
     margin-left: 0;
     margin-right: 25px;
   }
 
-  /* line 57, ../sass/_media.scss */
+  /* line 60, ../sass/_media.scss */
   .navigation-bar__nav {
     padding-left: 0;
     margin-top: 15px;
   }
 
-  /* line 61, ../sass/_media.scss */
+  /* line 64, ../sass/_media.scss */
   .calendar__title {
     font-size: 48px;
     line-height: 58px;
   }
 
-  /* line 65, ../sass/_media.scss */
+  /* line 68, ../sass/_media.scss */
   .calendar__body__point {
     flex-wrap: wrap;
     height: auto;
   }
 
-  /* line 69, ../sass/_media.scss */
+  /* line 72, ../sass/_media.scss */
   .calendar__body form {
     flex-wrap: wrap;
   }
 
-  /* line 72, ../sass/_media.scss */
+  /* line 75, ../sass/_media.scss */
   .calendar__body__point.button-block {
     align-items: center;
     margin-top: 10px;
   }
 
-  /* line 76, ../sass/_media.scss */
+  /* line 79, ../sass/_media.scss */
   .calendar__body__point button {
     height: auto;
     padding: 12px 18px 8px 18px;
@@ -1988,599 +1994,599 @@ header {
     margin: 0 auto;
   }
 
-  /* line 82, ../sass/_media.scss */
+  /* line 85, ../sass/_media.scss */
   .how-works__sub-title {
     margin-bottom: 30px;
   }
 
-  /* line 85, ../sass/_media.scss */
+  /* line 88, ../sass/_media.scss */
   .how-works__body__card {
     margin-bottom: 30px;
   }
 
-  /* line 88, ../sass/_media.scss */
+  /* line 91, ../sass/_media.scss */
   .how-works__body__card__wrapp__ico {
     height: 100px;
     padding: 5px 0;
   }
 
-  /* line 92, ../sass/_media.scss */
+  /* line 95, ../sass/_media.scss */
   .how-works__body__card__wrapp__text .how-works__body__card__wrapp__text__title {
     margin-bottom: 5px;
   }
 
-  /* line 95, ../sass/_media.scss */
+  /* line 98, ../sass/_media.scss */
   .how-works__title {
     font-size: 42px;
     line-height: 52px;
     margin-bottom: 15px;
   }
 
-  /* line 100, ../sass/_media.scss */
+  /* line 103, ../sass/_media.scss */
   .how-works {
     margin-bottom: 40px;
   }
 
-  /* line 103, ../sass/_media.scss */
+  /* line 106, ../sass/_media.scss */
   .parking-about__text h2 {
     font-size: 32px;
     line-height: 36px;
     margin-bottom: 25px;
   }
 
-  /* line 108, ../sass/_media.scss */
+  /* line 111, ../sass/_media.scss */
   .parking-about__text p {
     margin-bottom: 15px;
   }
 
-  /* line 111, ../sass/_media.scss */
+  /* line 114, ../sass/_media.scss */
   .parking-about {
     margin-bottom: 40px;
   }
 
-  /* line 114, ../sass/_media.scss */
+  /* line 117, ../sass/_media.scss */
   .first-look__card__img {
     padding: 10px 0;
     height: 90px;
   }
 
-  /* line 118, ../sass/_media.scss */
+  /* line 121, ../sass/_media.scss */
   .first-look__card__text {
     padding: 15px;
     font-size: 15px;
   }
 
-  /* line 122, ../sass/_media.scss */
+  /* line 125, ../sass/_media.scss */
   .first-look__bg {
     height: 250px;
   }
 
-  /* line 125, ../sass/_media.scss */
+  /* line 128, ../sass/_media.scss */
   #first-look {
     margin-bottom: 60px;
   }
 
-  /* line 128, ../sass/_media.scss */
+  /* line 131, ../sass/_media.scss */
   .reservation__text h2 {
     font-size: 42px;
     line-height: 48px;
     margin-bottom: 20px;
   }
 
-  /* line 133, ../sass/_media.scss */
+  /* line 136, ../sass/_media.scss */
   .reservation__text p {
     margin-bottom: 10px;
   }
 
-  /* line 136, ../sass/_media.scss */
+  /* line 139, ../sass/_media.scss */
   .reservation__text {
     line-height: 22px;
   }
 
-  /* line 139, ../sass/_media.scss */
+  /* line 142, ../sass/_media.scss */
   .reservation__block__wrap {
     padding: 15px 20px;
   }
 
-  /* line 142, ../sass/_media.scss */
+  /* line 145, ../sass/_media.scss */
   .reservation__block__wrap__title {
     line-height: 40px;
   }
 
-  /* line 145, ../sass/_media.scss */
+  /* line 148, ../sass/_media.scss */
   .reservation__block__wrap__sub-title {
     padding-bottom: 10px;
   }
 
-  /* line 148, ../sass/_media.scss */
+  /* line 151, ../sass/_media.scss */
   .reservation__block__wrap__par {
     margin-bottom: 15px;
   }
 
-  /* line 151, ../sass/_media.scss */
+  /* line 154, ../sass/_media.scss */
   .partners__title {
     font-size: 42px;
     line-height: 48px;
     margin-bottom: 25px;
   }
 
-  /* line 156, ../sass/_media.scss */
+  /* line 159, ../sass/_media.scss */
   .partners__body__card__wrap {
     padding: 0 5%;
   }
 
-  /* line 159, ../sass/_media.scss */
+  /* line 162, ../sass/_media.scss */
   .partners {
     margin-bottom: 40px;
   }
 
-  /* line 162, ../sass/_media.scss */
+  /* line 165, ../sass/_media.scss */
   #subscribe {
     padding: 30px 0;
   }
 
-  /* line 165, ../sass/_media.scss */
+  /* line 168, ../sass/_media.scss */
   .footer__subscribe__title {
     font-size: 32px;
     line-height: 42px;
   }
 
-  /* line 169, ../sass/_media.scss */
+  /* line 172, ../sass/_media.scss */
   .footer__subscribe__sub-title {
     font-size: 14px;
   }
 
-  /* line 172, ../sass/_media.scss */
+  /* line 175, ../sass/_media.scss */
   .footer__subscribe__input {
     width: 100%;
   }
 
-  /* line 175, ../sass/_media.scss */
+  /* line 178, ../sass/_media.scss */
   .footer__info__about__logo {
     margin-bottom: 10px;
   }
 
-  /* line 178, ../sass/_media.scss */
+  /* line 181, ../sass/_media.scss */
   .footer__info__about p {
     margin-bottom: 10px;
   }
 
-  /* line 181, ../sass/_media.scss */
+  /* line 184, ../sass/_media.scss */
   .footer__info__property__block__title {
     margin-bottom: 5px;
   }
 
-  /* line 184, ../sass/_media.scss */
+  /* line 187, ../sass/_media.scss */
   .footer__info__property__block ul li {
     margin-bottom: 0;
   }
 
-  /* line 187, ../sass/_media.scss */
+  /* line 190, ../sass/_media.scss */
   .footer__info__property__block ul {
     margin-bottom: 0;
   }
 
-  /* line 190, ../sass/_media.scss */
+  /* line 193, ../sass/_media.scss */
   .footer__info__property__block {
     margin-bottom: 20px;
   }
 
-  /* line 193, ../sass/_media.scss */
+  /* line 196, ../sass/_media.scss */
   .footer__info__information__title {
     margin-bottom: 5px;
   }
 
-  /* line 196, ../sass/_media.scss */
+  /* line 199, ../sass/_media.scss */
   .footer__info__information ul {
     margin-bottom: 0;
   }
 
-  /* line 199, ../sass/_media.scss */
+  /* line 202, ../sass/_media.scss */
   .footer__info__information ul li {
     margin-bottom: 0;
   }
 
-  /* line 202, ../sass/_media.scss */
+  /* line 205, ../sass/_media.scss */
   .footer__info__social ul li a {
     white-space: nowrap;
   }
 
-  /* line 205, ../sass/_media.scss */
+  /* line 208, ../sass/_media.scss */
   .footer__info__social__label {
     width: 100%;
     margin-top: 30px;
   }
 
-  /* line 209, ../sass/_media.scss */
+  /* line 212, ../sass/_media.scss */
   .calendar__info {
     margin-top: 75px;
   }
 
-  /* line 212, ../sass/_media.scss */
+  /* line 215, ../sass/_media.scss */
   .works-about p.works-about__title, .places-more__title, .places__title, .parking-more p.parking-more__title {
     font-size: 42px;
     line-height: 52px;
     margin-bottom: 15px;
   }
 
-  /* line 217, ../sass/_media.scss */
+  /* line 220, ../sass/_media.scss */
   .places__body__card__img {
     width: 170px;
     flex-shrink: 0;
   }
 
-  /* line 221, ../sass/_media.scss */
+  /* line 224, ../sass/_media.scss */
   .places__body__card {
     height: 180px;
   }
 
-  /* line 224, ../sass/_media.scss */
+  /* line 227, ../sass/_media.scss */
   .places__body__card__info {
     padding: 18px;
   }
 
-  /* line 227, ../sass/_media.scss */
+  /* line 230, ../sass/_media.scss */
   .places__body__card__info__title {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 5px;
   }
 
-  /* line 232, ../sass/_media.scss */
+  /* line 235, ../sass/_media.scss */
   .places__body__card__info__address {
     font-size: 15px;
     line-height: 20px;
   }
 
-  /* line 236, ../sass/_media.scss */
+  /* line 239, ../sass/_media.scss */
   .places__body__card__button {
     padding: 13px;
   }
 
-  /* line 239, ../sass/_media.scss */
+  /* line 242, ../sass/_media.scss */
   .works-about, .parking-more, #map-parking, .places, .places-more {
     margin-bottom: 50px;
   }
 
-  /* line 242, ../sass/_media.scss */
+  /* line 245, ../sass/_media.scss */
   .places-more__body__card {
     margin-bottom: 20px;
   }
 
-  /* line 245, ../sass/_media.scss */
+  /* line 248, ../sass/_media.scss */
   .first-look.mod-option .first-look__card__img {
     padding: 30px 20px 10px;
   }
 
-  /* line 248, ../sass/_media.scss */
+  /* line 251, ../sass/_media.scss */
   .first-look__card__img__text {
     font-size: 20px;
     text-align: center;
     margin-bottom: 0;
   }
 
-  /* line 253, ../sass/_media.scss */
+  /* line 256, ../sass/_media.scss */
   .first-look.mod-option .first-look__card__img::before {
     left: 20px;
   }
 
-  /* line 256, ../sass/_media.scss */
+  /* line 259, ../sass/_media.scss */
   #header__calendar.mod-option .calendar__body {
     margin-bottom: 55px;
   }
 
-  /* line 259, ../sass/_media.scss */
+  /* line 262, ../sass/_media.scss */
   #header__calendar.mod-option {
     margin-bottom: -85px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 264, ../sass/_media.scss */
+  /* line 267, ../sass/_media.scss */
   #header__calendar.mod-option .calendar__body {
     margin-bottom: 0;
   }
 
-  /* line 267, ../sass/_media.scss */
+  /* line 270, ../sass/_media.scss */
   .first-look__bg.mod-option {
     display: none;
   }
 
-  /* line 270, ../sass/_media.scss */
+  /* line 273, ../sass/_media.scss */
   .navigation-bar__info {
     padding: 0;
     justify-content: space-around;
     display: flex;
   }
 
-  /* line 275, ../sass/_media.scss */
+  /* line 278, ../sass/_media.scss */
   .navigation-bar__nav {
     margin-top: 0;
   }
 
-  /* line 278, ../sass/_media.scss */
+  /* line 281, ../sass/_media.scss */
   .calendar__title {
     font-size: 36px;
     line-height: 42px;
   }
 
-  /* line 282, ../sass/_media.scss */
+  /* line 285, ../sass/_media.scss */
   .calendar__body {
     height: auto;
   }
 
-  /* line 285, ../sass/_media.scss */
+  /* line 288, ../sass/_media.scss */
   .calendar__body__point {
     padding: 10px 20px;
   }
 
-  /* line 288, ../sass/_media.scss */
+  /* line 291, ../sass/_media.scss */
   .calendar__body__point__input-date:nth-child(1):before {
     height: 0;
   }
 
-  /* line 291, ../sass/_media.scss */
+  /* line 294, ../sass/_media.scss */
   .calendar__body__point.button-block {
     margin-top: 5px;
     margin-bottom: 10px;
   }
 
-  /* line 295, ../sass/_media.scss */
+  /* line 298, ../sass/_media.scss */
   .parking-about__text h2 {
     font-size: 24px;
     line-height: 26px;
     margin-bottom: 15px;
   }
 
-  /* line 300, ../sass/_media.scss */
+  /* line 303, ../sass/_media.scss */
   .parking-about__text p {
     letter-spacing: 0;
     margin-bottom: 10px;
   }
 
-  /* line 304, ../sass/_media.scss */
+  /* line 307, ../sass/_media.scss */
   .parking-about__text {
     font-size: 14px;
     line-height: 16px;
   }
 
-  /* line 308, ../sass/_media.scss */
+  /* line 311, ../sass/_media.scss */
   .first-look__title {
     font-size: 36px;
     line-height: 48px;
   }
 
-  /* line 312, ../sass/_media.scss */
+  /* line 315, ../sass/_media.scss */
   #first-look {
     padding-top: 25px;
     margin-bottom: 20px;
   }
 
-  /* line 316, ../sass/_media.scss */
+  /* line 319, ../sass/_media.scss */
   .first-look > div {
     margin-bottom: 30px;
   }
 
-  /* line 319, ../sass/_media.scss */
+  /* line 322, ../sass/_media.scss */
   .first-look__bg {
     height: 220px;
   }
 
-  /* line 322, ../sass/_media.scss */
+  /* line 325, ../sass/_media.scss */
   .partners__body {
     flex-wrap: wrap;
   }
 
-  /* line 325, ../sass/_media.scss */
+  /* line 328, ../sass/_media.scss */
   .partners__body__card {
     width: 30%;
     margin-bottom: 20px;
   }
 
-  /* line 329, ../sass/_media.scss */
+  /* line 332, ../sass/_media.scss */
   .partners__body__card__wrap {
     padding: 0 10%;
   }
 
-  /* line 332, ../sass/_media.scss */
+  /* line 335, ../sass/_media.scss */
   .footer__subscribe__block {
     margin-bottom: 15px;
   }
 
-  /* line 335, ../sass/_media.scss */
+  /* line 338, ../sass/_media.scss */
   .footer__info__social__label {
     width: 50%;
   }
 
-  /* line 338, ../sass/_media.scss */
+  /* line 341, ../sass/_media.scss */
   .works-about ul li {
     line-height: 18px;
   }
 
-  /* line 341, ../sass/_media.scss */
+  /* line 344, ../sass/_media.scss */
   .parking-more p {
     margin-bottom: 10px;
     line-height: 22px;
   }
 
-  /* line 345, ../sass/_media.scss */
+  /* line 348, ../sass/_media.scss */
   .places__body__card__img {
     width: 35%;
     height: auto;
   }
 
-  /* line 349, ../sass/_media.scss */
+  /* line 352, ../sass/_media.scss */
   .places__body__card__img img {
     height: auto;
     width: 100%;
   }
 
-  /* line 353, ../sass/_media.scss */
+  /* line 356, ../sass/_media.scss */
   .places__body__card {
     align-items: flex-start;
     flex-wrap: wrap;
     height: auto;
   }
 
-  /* line 358, ../sass/_media.scss */
+  /* line 361, ../sass/_media.scss */
   .places__body__card__info {
     width: 65%;
     padding: 8px 14px;
   }
 
-  /* line 362, ../sass/_media.scss */
+  /* line 365, ../sass/_media.scss */
   .places__body__card__button {
     padding: 0;
     width: 35%;
   }
 
-  /* line 366, ../sass/_media.scss */
+  /* line 369, ../sass/_media.scss */
   .places__body__card__button .yellow-btn {
     width: 100%;
   }
 
-  /* line 369, ../sass/_media.scss */
+  /* line 372, ../sass/_media.scss */
   .places__body__card__info__link a {
     padding: 4px 14px 2px 14px;
   }
 
-  /* line 372, ../sass/_media.scss */
+  /* line 375, ../sass/_media.scss */
   .works-about p.works-about__title, .places-more__title, .places__title, .parking-more p.parking-more__title {
     font-size: 32px;
     line-height: 36px;
   }
 
-  /* line 376, ../sass/_media.scss */
+  /* line 379, ../sass/_media.scss */
   .places-more__body__card {
     flex-wrap: wrap;
     margin-bottom: 30px;
   }
 
-  /* line 380, ../sass/_media.scss */
+  /* line 383, ../sass/_media.scss */
   .places-more__body__card__img {
     width: 100%;
     margin-bottom: 10px;
   }
 
-  /* line 384, ../sass/_media.scss */
+  /* line 387, ../sass/_media.scss */
   .places-more__body__card__text {
     padding: 0 5px;
     text-align: center;
   }
 
-  /* line 388, ../sass/_media.scss */
+  /* line 391, ../sass/_media.scss */
   .places-more__body__card:nth-child(2n) .places-more__body__card__text {
     padding: 0 5px;
     text-align: center;
   }
 
-  /* line 392, ../sass/_media.scss */
+  /* line 395, ../sass/_media.scss */
   .places-more__body__card:nth-child(2n) .places-more__body__card__img {
     order: 0;
   }
 
-  /* line 395, ../sass/_media.scss */
+  /* line 398, ../sass/_media.scss */
   .calendar__info {
     display: none;
   }
 }
 @media screen and (max-width: 574px) {
-  /* line 400, ../sass/_media.scss */
+  /* line 403, ../sass/_media.scss */
   .contact__title {
     font-size: 26px;
     margin-bottom: 10px;
     line-height: 30px;
   }
 
-  /* line 405, ../sass/_media.scss */
+  /* line 408, ../sass/_media.scss */
   .contact__info__title, .resolution__title {
     font-size: 20px;
   }
 
-  /* line 408, ../sass/_media.scss */
+  /* line 411, ../sass/_media.scss */
   .contact__info__title {
     font-weight: 500;
   }
 
-  /* line 411, ../sass/_media.scss */
+  /* line 414, ../sass/_media.scss */
   .resolution, .contact {
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 30px;
   }
 
-  /* line 416, ../sass/_media.scss */
+  /* line 419, ../sass/_media.scss */
   .first-look.mod-option {
     padding-bottom: 0;
   }
 
-  /* line 419, ../sass/_media.scss */
+  /* line 422, ../sass/_media.scss */
   .navigation-bar__info {
     display: none;
     flex-wrap: wrap;
     margin-bottom: 10px;
   }
 
-  /* line 424, ../sass/_media.scss */
+  /* line 427, ../sass/_media.scss */
   .navigation-bar__nav {
     display: none;
   }
 
-  /* line 427, ../sass/_media.scss */
+  /* line 430, ../sass/_media.scss */
   .navigation-bar__collapse {
     display: block;
   }
 
-  /* line 430, ../sass/_media.scss */
+  /* line 433, ../sass/_media.scss */
   .navigation-bar__info span {
     margin: 10px;
   }
 
-  /* line 433, ../sass/_media.scss */
+  /* line 436, ../sass/_media.scss */
   .navigation-bar__info a {
     margin: 10px;
   }
 
-  /* line 436, ../sass/_media.scss */
+  /* line 439, ../sass/_media.scss */
   .navigation-bar__nav ul li {
     margin-right: 0;
   }
 
-  /* line 439, ../sass/_media.scss */
+  /* line 442, ../sass/_media.scss */
   .navigation-bar__nav nav {
     align-items: center;
     flex-direction: column;
   }
 
-  /* line 443, ../sass/_media.scss */
+  /* line 446, ../sass/_media.scss */
   .navigation-bar__nav ul {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
   }
 
-  /* line 448, ../sass/_media.scss */
+  /* line 451, ../sass/_media.scss */
   .navigation-bar__nav__language {
     margin-left: 0;
     width: 100%;
   }
 
-  /* line 452, ../sass/_media.scss */
+  /* line 455, ../sass/_media.scss */
   .navigation-bar__nav__language:before {
     width: 0;
   }
 
-  /* line 455, ../sass/_media.scss */
+  /* line 458, ../sass/_media.scss */
   .navigation-bar__nav__language__active a {
     height: 22px;
     padding-right: 36px;
   }
 
-  /* line 459, ../sass/_media.scss */
+  /* line 462, ../sass/_media.scss */
   .navigation-bar__nav__language__active {
     text-align: center;
   }
 
-  /* line 462, ../sass/_media.scss */
+  /* line 465, ../sass/_media.scss */
   .navigation-bar__nav__language__active a:before {
     right: 10px;
     width: 15px;
@@ -2588,7 +2594,7 @@ header {
     top: 8px;
   }
 
-  /* line 468, ../sass/_media.scss */
+  /* line 471, ../sass/_media.scss */
   .navigation-bar__nav__language__drop {
     width: 100vw;
     left: 50%;
@@ -2596,25 +2602,25 @@ header {
     text-align: center;
   }
 
-  /* line 474, ../sass/_media.scss */
+  /* line 477, ../sass/_media.scss */
   .calendar__title {
     font-size: 26px;
     line-height: 28px;
   }
 
-  /* line 478, ../sass/_media.scss */
+  /* line 481, ../sass/_media.scss */
   .calendar {
     height: 400px;
   }
 
-  /* line 481, ../sass/_media.scss */
+  /* line 484, ../sass/_media.scss */
   .calendar__body__point__input-date {
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
   }
 
-  /* line 486, ../sass/_media.scss */
+  /* line 489, ../sass/_media.scss */
   .calendar__body__point__input-date:before {
     width: 95%;
     height: 2px;
@@ -2623,191 +2629,191 @@ header {
     top: 0;
   }
 
-  /* line 493, ../sass/_media.scss */
+  /* line 496, ../sass/_media.scss */
   .calendar__body__point__input-date:nth-child(1):before {
     height: 2px;
   }
 
-  /* line 496, ../sass/_media.scss */
+  /* line 499, ../sass/_media.scss */
   .calendar__footer__body__rate {
     margin-right: 0;
     margin-bottom: 10px;
     margin-top: 10px;
   }
 
-  /* line 501, ../sass/_media.scss */
+  /* line 504, ../sass/_media.scss */
   .calendar__footer__body__link a {
     text-align: center;
     padding: 0 30px;
   }
 
-  /* line 505, ../sass/_media.scss */
+  /* line 508, ../sass/_media.scss */
   .calendar__footer {
     height: 90px;
     bottom: -90px;
   }
 
-  /* line 509, ../sass/_media.scss */
+  /* line 512, ../sass/_media.scss */
   #header__calendar {
     margin-bottom: 110px;
   }
 
-  /* line 512, ../sass/_media.scss */
+  /* line 515, ../sass/_media.scss */
   .how-works__title {
     font-size: 30px;
     line-height: 44px;
   }
 
-  /* line 516, ../sass/_media.scss */
+  /* line 519, ../sass/_media.scss */
   .how-works__body__card {
     margin-bottom: 15px;
   }
 
-  /* line 519, ../sass/_media.scss */
+  /* line 522, ../sass/_media.scss */
   .parking-about__images {
     width: 260px;
     margin: 0 auto;
   }
 
-  /* line 523, ../sass/_media.scss */
+  /* line 526, ../sass/_media.scss */
   .how-works {
     margin-bottom: 20px;
   }
 
-  /* line 526, ../sass/_media.scss */
+  /* line 529, ../sass/_media.scss */
   .first-look__title {
     font-size: 28px;
     line-height: 36px;
   }
 
-  /* line 530, ../sass/_media.scss */
+  /* line 533, ../sass/_media.scss */
   .reservation__text h2 {
     font-size: 34px;
     line-height: 34px;
   }
 
-  /* line 534, ../sass/_media.scss */
+  /* line 537, ../sass/_media.scss */
   .reservation__block__wrap__title {
     font-size: 32px;
   }
 
-  /* line 537, ../sass/_media.scss */
+  /* line 540, ../sass/_media.scss */
   .reservation__block__wrap__sub-title {
     font-size: 28px;
     line-height: 44px;
   }
 
-  /* line 541, ../sass/_media.scss */
+  /* line 544, ../sass/_media.scss */
   .partners__title {
     padding: 0 15px;
     font-size: 36px;
     line-height: 38px;
   }
 
-  /* line 546, ../sass/_media.scss */
+  /* line 549, ../sass/_media.scss */
   .partners__body__card {
     width: 50%;
   }
 
-  /* line 549, ../sass/_media.scss */
+  /* line 552, ../sass/_media.scss */
   .footer__subscribe {
     padding: 0 15px;
   }
 
-  /* line 552, ../sass/_media.scss */
+  /* line 555, ../sass/_media.scss */
   .footer__subscribe__title {
     font-size: 24px;
     line-height: 28px;
   }
 
-  /* line 556, ../sass/_media.scss */
+  /* line 559, ../sass/_media.scss */
   .footer__subscribe__sub-title {
     line-height: 20px;
   }
 
-  /* line 559, ../sass/_media.scss */
+  /* line 562, ../sass/_media.scss */
   .footer__subscribe__input__text {
     padding: 0 5px;
   }
 
-  /* line 562, ../sass/_media.scss */
+  /* line 565, ../sass/_media.scss */
   .footer__subscribe__input__submit {
     padding: 0 5px;
   }
 
-  /* line 565, ../sass/_media.scss */
+  /* line 568, ../sass/_media.scss */
   .footer__info__about__logo {
     text-align: center;
   }
 
-  /* line 568, ../sass/_media.scss */
+  /* line 571, ../sass/_media.scss */
   #footer {
     padding: 30px 0;
   }
 
-  /* line 571, ../sass/_media.scss */
+  /* line 574, ../sass/_media.scss */
   .footer__info__about p {
     text-align: center;
   }
 
-  /* line 574, ../sass/_media.scss */
+  /* line 577, ../sass/_media.scss */
   .footer__info__property__block {
     text-align: center;
   }
 
-  /* line 577, ../sass/_media.scss */
+  /* line 580, ../sass/_media.scss */
   .footer__info__information {
     text-align: center;
   }
 
-  /* line 580, ../sass/_media.scss */
+  /* line 583, ../sass/_media.scss */
   .footer__info__social {
     text-align: center;
     margin-top: 15px;
   }
 
-  /* line 584, ../sass/_media.scss */
+  /* line 587, ../sass/_media.scss */
   .footer__info__social__label {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 588, ../sass/_media.scss */
+  /* line 591, ../sass/_media.scss */
   .works-about ul li {
     padding-left: 25px;
   }
 
-  /* line 591, ../sass/_media.scss */
+  /* line 594, ../sass/_media.scss */
   .works-about p.works-about__title, .places-more__title, .places__title, .parking-more p.parking-more__title {
     font-size: 26px;
     line-height: 28px;
   }
 
-  /* line 595, ../sass/_media.scss */
+  /* line 598, ../sass/_media.scss */
   .places__body__card__img {
     width: 100%;
     height: 140px;
   }
 
-  /* line 599, ../sass/_media.scss */
+  /* line 602, ../sass/_media.scss */
   .places__body__card__img img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
 
-  /* line 604, ../sass/_media.scss */
+  /* line 607, ../sass/_media.scss */
   .places__body__card__info {
     width: 100%;
   }
 
-  /* line 607, ../sass/_media.scss */
+  /* line 610, ../sass/_media.scss */
   .places__body__card__button {
     width: 100%;
     margin-top: 10px;
   }
 
-  /* line 611, ../sass/_media.scss */
+  /* line 614, ../sass/_media.scss */
   .works-about, .parking-more, #map-parking, .places, .places-more {
     margin-left: 0;
     margin-right: 0;
