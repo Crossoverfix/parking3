@@ -250,7 +250,7 @@
   }
   .first-look__card__img__text{
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 0;
   }
   .first-look.mod-option .first-look__card__img::before{
@@ -386,11 +386,11 @@
   }
   .places-more__body__card__text{
     padding: 0 5px;
-    text-align: center;
+    text-align: left;
   }
   .places-more__body__card:nth-child(2n) .places-more__body__card__text{
     padding: 0 5px;
-    text-align: center;
+    text-align: left;
   }
   .places-more__body__card:nth-child(2n) .places-more__body__card__img{
     order: 0;
